@@ -531,7 +531,7 @@ def main(argv=None):
                         logFile.flush()
                         go = True
                         try:
-                            #arcpy.FeatureClassToFeatureClass_conversion(fGDB + '\\' + fc, localGDB1, aliasName + NEW)
+                            arcpy.FeatureClassToFeatureClass_conversion(fGDB + '\\' + fc, localGDB1, aliasName + NEW)
                             mydeploylist.write (fGDB + '\\' + fc  + "\n")
                             mydeploylist.flush()
                             logFile.write ("\n" + "Finished Importing %s" % localFC)
@@ -560,7 +560,7 @@ def main(argv=None):
                         logFile.write ("\n" + "Importing table %s" % localFC)
                         logFile.flush()
                         try:
-                            #arcpy.TableToTable_conversion(fGDB + '\\' + fc, localGDB1, aliasName + NEW)
+                            arcpy.TableToTable_conversion(fGDB + '\\' + fc, localGDB1, aliasName + NEW)
                             mydeploylist.write (fGDB + '\\' + fc  + "\n")
                             mydeploylist.flush()
                             logFile.write ("\n" + "Finished Importing %s" % localFC)
