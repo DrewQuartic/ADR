@@ -1,0 +1,42 @@
+
+==============START: GDBZipAndShip.py script start time: 2013-08-13 17:11:23.893000
+[2013-08-13 17:11:23.931000]- Deleted old files
+[2013-08-13 17:11:26.381000]- Successfully ran query: days_since_create <= 10 AND replicate_sangis = 'Y'
+[2013-08-13 17:11:27.006000]- found a layer: Database Connections\SHossack@atlasdev.sde\SDW.CITY.STREET\SDW.CITY.STREET_ALLEY_WALKWAY
+[2013-08-13 17:11:27.436000]- writing: D:\Steve\SanGISZipAndShip\staging\STREET_ALLEY_WALKWAY.gdb
+[2013-08-13 17:11:36.220000]- found a layer: Database Connections\SHossack@atlasdev.sde\SDW.CITY.STORM_WATER\SDW.CITY.DRAIN_BMP
+[2013-08-13 17:11:36.494000]- writing: D:\Steve\SanGISZipAndShip\staging\DRAIN_BMP.gdb
+[2013-08-13 17:11:38.417000]- found a layer: Database Connections\SHossack@atlasdev.sde\SDW.CITY.STORM_WATER\SDW.CITY.DRAIN_PUMP_STATION
+[2013-08-13 17:11:38.692000]- writing: D:\Steve\SanGISZipAndShip\staging\DRAIN_PUMP_STATION.gdb
+[2013-08-13 17:11:40.397000]- creating manifest: D:\Steve\SanGISZipAndShip\staging\LAYERS_UPDATE_TABLE.gdb
+[2013-08-13 17:11:41.514000]- Error trying to write to zip file LAYERS_UPDATE_TABLE.gdb\
+[2013-08-13 17:11:41.514000]- ERROR:[Errno 13] Permission denied: 'D:\\Steve\\SanGISZipAndShip\\staging\\LAYERS_UPDATE_TABLE.gdb\\LAYERS_UPDATE_TABLE.GISAPPSERVERDEV.11224.11844.sr.lock'
+[2013-08-13 17:11:41.528000]- Error trying to write to zip file LAYERS_UPDATE_TABLE.gdb\
+[2013-08-13 17:11:41.528000]- ERROR:[Errno 13] Permission denied: 'D:\\Steve\\SanGISZipAndShip\\staging\\LAYERS_UPDATE_TABLE.gdb\\_gdb.GISAPPSERVERDEV.11224.11844.sr.lock'
+[2013-08-13 17:11:42.138000]- sending D:\Steve\SanGISZipAndShip\staging\DRAIN_BMP.zip via ftp!
+[2013-08-13 17:11:43.662000]- sending D:\Steve\SanGISZipAndShip\staging\DRAIN_PUMP_STATION.zip via ftp!
+[2013-08-13 17:11:44.784000]- sending D:\Steve\SanGISZipAndShip\staging\LAYERS_UPDATE_TABLE.zip via ftp!
+[2013-08-13 17:11:45.426000]- sending D:\Steve\SanGISZipAndShip\staging\STREET_ALLEY_WALKWAY.zip via ftp!
+[2013-08-13 17:12:06.427000]- FINISH----------Total elapsed time = 0:00:42
+
+==============START: GDBZipAndShip.py script start time: 2013-08-16 11:12:43.130000
+[2013-08-16 11:12:43.178000]- Deleted old files
+[2013-08-16 11:12:45.807000]- Successfully ran query: days_since_create <= 10 AND replicate_sangis = 'Y'
+[2013-08-16 11:12:46.725000]- found a layer: Database Connections\City@atlasdev.sde\SDW.CITY.STREET\SDW.CITY.STREET_ALLEY_WALKWAY
+[2013-08-16 11:12:47.165000]- writing: D:\Steve\SanGISZipAndShip\staging\STREET_ALLEY_WALKWAY.gdb
+[2013-08-16 11:12:56.078000]- found a layer: Database Connections\City@atlasdev.sde\SDW.CITY.STORM_WATER\SDW.CITY.DRAIN_BMP
+[2013-08-16 11:12:56.351000]- writing: D:\Steve\SanGISZipAndShip\staging\DRAIN_BMP.gdb
+[2013-08-16 11:12:58.492000]- found a layer: Database Connections\City@atlasdev.sde\SDW.CITY.STORM_WATER\SDW.CITY.DRAIN_PUMP_STATION
+[2013-08-16 11:12:58.769000]- writing: D:\Steve\SanGISZipAndShip\staging\DRAIN_PUMP_STATION.gdb
+[2013-08-16 11:13:00.517000]- creating manifest: D:\Steve\SanGISZipAndShip\staging\LAYERS_UPDATE_TABLE.gdb
+[2013-08-16 11:13:01.628000]- Error trying to write to zip file LAYERS_UPDATE_TABLE.gdb\
+[2013-08-16 11:13:01.628000]- ERROR:[Errno 13] Permission denied: 'D:\\Steve\\SanGISZipAndShip\\staging\\LAYERS_UPDATE_TABLE.gdb\\LAYERS_UPDATE_TABLE.GISAPPSERVERDEV.11536.11312.sr.lock'
+[2013-08-16 11:13:01.648000]- Error trying to write to zip file LAYERS_UPDATE_TABLE.gdb\
+[2013-08-16 11:13:01.648000]- ERROR:[Errno 13] Permission denied: 'D:\\Steve\\SanGISZipAndShip\\staging\\LAYERS_UPDATE_TABLE.gdb\\_gdb.GISAPPSERVERDEV.11536.11312.sr.lock'
+[2013-08-16 11:13:02.234000]- sending D:\Steve\SanGISZipAndShip\staging\DRAIN_BMP.zip via ftp!
+[2013-08-16 11:13:04.489000]- sending D:\Steve\SanGISZipAndShip\staging\DRAIN_PUMP_STATION.zip via ftp!
+[2013-08-16 11:13:05.600000]- sending D:\Steve\SanGISZipAndShip\staging\LAYERS_UPDATE_TABLE.zip via ftp!
+[2013-08-16 11:13:06.248000]- sending D:\Steve\SanGISZipAndShip\staging\STREET_ALLEY_WALKWAY.zip via ftp!
+[2013-08-16 11:13:44.747000]- FINISH----------Total elapsed time = 0:01:01
+
+==============START: GDBZipAndShip.py script start time: 2013-09-18 17:00:27.951000
