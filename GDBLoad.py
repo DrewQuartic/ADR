@@ -19,8 +19,8 @@ import datetime, time
 import smtplib
 
 # Setup Logging
-logFile = open("D:\BATCH_FILES\ADR\GDBLoad_LOG.txt", "a")
-layerlogFile = open("D:\BATCH_FILES\ADR\GDBLoad_LAYERLOG.txt", "a")
+logFile = open("D:\BATCH_FILES\ADR\GDBLoad_LOG.txt", "wb")
+layerlogFile = open("D:\BATCH_FILES\ADR\GDBLoad_LAYERLOG.txt", "wb")
 
 # Read Configuration File
 config = ConfigParser.ConfigParser()
@@ -54,8 +54,8 @@ schema = config.get('names', 'schema')
 sde_keyword = config.get('names', 'sde_keyword')
 responsible_party_str = config.get('names', 'responsible_party_list')
 responsible_party_list = responsible_party_str.split(',')
-updateTable = config.get('paths', 'updateTable')
-updateTableName = config.get('paths', 'updateTableName')
+updateTableSDE = config.get('paths', 'updateTable')
+updateTableNameSangis = config.get('paths', 'updateTableName')
 updateTableSrc = ''
 fGDB = config.get('paths', 'fGDB')
 importNewLayers = parseBoolString(config.get('settings', 'importNewLayers'))
@@ -126,9 +126,16 @@ def getLayerListFromFile(fileName):
         logFile.write ("\n" + "Layer List file % doesn't exist" % fileName)
         return []
 
+
+
 def checkIsNewLayer(fc,updateTableSrc):
+    """This function compars the fc in the sangis manifest agains the citys layers table. It compars update dates
+    To see which is newer and also retures the dataset the fc belogns in as well as the name the citycalls the layer, which is ofter
+    different from what SanGIS calls it"""
     isNew = False
     dataType = "UNKNOWN"
+    datasetName = ""
+    cityFCName = ""
     # Check for schema name
 
     ls = fc.split(".")
@@ -143,13 +150,15 @@ def checkIsNewLayer(fc,updateTableSrc):
     try:
         print "fc = " + fc
         print "updatetablesrc = " + updateTableSrc
-        print "updatetable = " + updateTable
+        print "updatetable = " + updateTableSDE
         theCount = 0
-        logFile.write ("\n" + "-->Checking layer %s is new in old table %s" % (fc, updateTable))
-        c1 = arcpy.da.SearchCursor(updateTable, ["RESPONSIBLE_DEPARTMENT", "UPDATE_DATE"], "\"SANGIS_LAYER_NAME\" = '" + str(fc) + "'")
+        logFile.write ("\n" + "-->Checking layer %s is new in old table %s" % (fc, updateTableSDE))
+        c1 = arcpy.da.SearchCursor(updateTableSDE, ["RESPONSIBLE_DEPARTMENT", "UPDATE_DATE","Dataset","CITY_LAYER_NAME"], "\"SANGIS_LAYER_NAME\" = '" + str(fc) + "'")
         logFile.write ("\n" + "-->Checking layer %s is new in Src table %s" % (fc, updateTableSrc))
         c2 = arcpy.da.SearchCursor(updateTableSrc, ["UPDATE_DATE", "DATA_TYPE", "LAYER_NAME"], "\"LAYER_NAME\" = '" + str(fc) + "'")### Add fields that should be added to updatTable if new layer ###
         for r1 in c1:
+            datasetName = r1[2]
+            cityFCName = r1[3]
             for r2 in c2:
                 theCount = theCount + 1
 
@@ -191,12 +200,12 @@ def checkIsNewLayer(fc,updateTableSrc):
                     isNew = True
                     logFile.write ("\n" + "%s is a new layer" % fc)
                     layerlogFile.write ("\n" + "%s is a new layer" % fc)
-                    c3 = arcpy.da.InsertCursor(updateTable, ["SANGIS_LAYER_NAME", "UPDATE_DATE"])# Create insert cursor #
+                    c3 = arcpy.da.InsertCursor(updateTableSDE, ["SANGIS_LAYER_NAME", "UPDATE_DATE"])# Create insert cursor #
                     layerName = r2[2]# Get values from updateTableSource #
                     UpdateDate = r2[0]# Get values from updateTableSource #
                     c3.insertRow([layerName, UpdateDate])# Insert new row #
-                    logFile.write ("\n" + "Added new record to %s table" % updateTable)
-                    layerlogFile.write ("\n" + "Added new record to %s table" % updateTable)
+                    logFile.write ("\n" + "Added new record to %s table" % updateTableSDE)
+                    layerlogFile.write ("\n" + "Added new record to %s table" % updateTableSDE)
                     del c3
                 else:
                     logFile.write ("\n" + "%s is a new layer, but new layers are excluded per configuration setting" % fc)
@@ -212,7 +221,7 @@ def checkIsNewLayer(fc,updateTableSrc):
         del c2, r2
 
 
-        return isNew, dataType
+        return isNew, dataType, datasetName, cityFCName
 
     except:
         logFile.write ("\n" + "Unable to check if %s is new or was updated." % fc)
@@ -245,7 +254,7 @@ def getAlias(localFC):
     localFC = stripSchema(localFC)
     try:
         theCount = 0
-        c1 = arcpy.da.SearchCursor(updateTable,["ALIAS"], "\"SANGIS_LAYER_NAME\" = '" + localFC + "'")
+        c1 = arcpy.da.SearchCursor(updateTableSDE,["ALIAS"], "\"SANGIS_LAYER_NAME\" = '" + localFC + "'")
         for r1 in c1:
             theCount = theCount + 1
             rAlias = r1[0]
@@ -280,7 +289,7 @@ def setAlias(localFC):
             if aliasCheck[1]:
                 logFile.write ("\n" + "%s is a new layer, but already has an alias name of %s" % (localFC,newName))
             else:
-                c1 = arcpy.da.InsertCursor(updateTable,["SANGIS_LAYER_NAME","ALIAS","UPDATE_DATE"])
+                c1 = arcpy.da.InsertCursor(updateTableSDE,["SANGIS_LAYER_NAME","ALIAS","UPDATE_DATE"])
                 c1.insertRow([localFC, newName , "1/1/1999"])
 
                 logFile.write ("\n" + "%s is a new layer" % localFC)
@@ -301,7 +310,7 @@ def aliasExists(aliasName, localFC):  # SANGIS.LONG_NAME_ALIAS
     reuse = False
     aliasName = stripSchema(aliasName)
     try:
-        c1 = arcpy.da.SearchCursor(updateTable, ["SANGIS_LAYER_NAME"], "\"ALIAS\" = '" + aliasName + "'")
+        c1 = arcpy.da.SearchCursor(updateTableSDE, ["SANGIS_LAYER_NAME"], "\"ALIAS\" = '" + aliasName + "'")
         for r1 in c1:
             if r1[0] == localFC:
                 reuse = True
@@ -326,11 +335,13 @@ def main(argv=None):
         except getopt.error, msg:
             raise Usage(msg)
 
+        arcpy.env.overwriteOutput = True
+
         # Setup Email major error
         isErr = False
         Errmlmssg = "Load ERRORS: "
         sender = 'DEVELOPMENT load_notify@sddpc.org'
-        receivers = ['steve@quarticsolutions.com', 'bill@quarticsolutions.com']#, 'timo@quarticsolutions.com'] #'drew@quarticsolutions.com', 'rob@quarticsolutions.com']
+        receivers = ['drew@quarticsolutions.com'] #['steve@quarticsolutions.com', 'bill@quarticsolutions.com']#, 'timo@quarticsolutions.com'] #'drew@quarticsolutions.com', 'rob@quarticsolutions.com']
 
         layerCount = 0
         tableCount = 0
@@ -339,6 +350,9 @@ def main(argv=None):
         startTime = datetime.datetime.today()
         startCheckTime = time.time()
         strstartTime = startTime.strftime("%I:%M%p on %B %d, %Y")
+
+        #This table will hold the list of feature classes to be loaded in the deployscript
+        mydeploylist = open(deploylist, 'wb')
 
         logFile.write ("\n")
         logFile.write ("\n" + "-----------------Beginning Update Job---------------")
@@ -351,7 +365,7 @@ def main(argv=None):
         #   on ganymede: 816464827 bytes received in 1330.45Seconds 613.68Kbytes/sec.
 
         # If local FGDB is not set in GDBLoad.ini, retrieve manifest from FTP site
-        mydeploylist = open(deploylist, 'wb')
+
 
         global fGDB
         if len(fGDB)==0:
@@ -369,7 +383,7 @@ def main(argv=None):
             Errmlmssg = Errmlmssg + "\n" + "Failed to Dowload Manifest"
 #        fGDB = r"D:\Data\IN\SANGIS\manifest.gdb"
         try:
-             updateTableSrc = fGDB + '\\' + updateTableName
+             updateTableSrc = fGDB + '\\' + updateTableNameSangis
         except Exception, e:
              print e
         logFile.write ("\n")
@@ -385,18 +399,6 @@ def main(argv=None):
         else:
             layerList = getLayerList(updateTableSrc)
 
-        # Try to lock dataset
-        #=======================================================================
-        # try:
-        #    arcpy.DisconnectUser(AdminGDB, "ALL")
-        #    arcpy.AcceptConnections(AdminGDB, False)
-        #    logFile.write ("\n" + "----------SDE Accounts Locked----------")
-        # except:
-        #    raise Exception, "Failed To Lockout SDE Accounts"
-        #    isErr = True
-        #    Errmlmssg = Errmlmssg + "\n" + "Could not lock SDE database"
-        #=======================================================================
-
         #----------Main Loop----------
         # For each layer in the GDB,
         print "BEFORE LOOP LAYER LIST"
@@ -410,7 +412,7 @@ def main(argv=None):
             #Check if layer is new or is newer than local copy
             try:
                 print "BEFORE CHECK======"
-                doLoad, dataType = checkIsNewLayer(fc,updateTableSrc)
+                doLoad, dataType, localDataset, cityFCName = checkIsNewLayer(fc,updateTableSrc)
                 print "DO LOAD = " + str(doLoad)
             except:
                 doLoad = False
@@ -500,27 +502,34 @@ def main(argv=None):
                     if not schemaChecked:
                         layerlogFile.write ("\n" + 'Schema check failed for %s, forcing load based on configuration'% localFC)
 
-                    localFC = localFC + NEW
+                    #localFC = localFC + NEW
+
 #------------------------------------------Split Here-----------------------------------------------
                     # Delete Existing _NEW layer if it already exists
-                    # Check for existing _NEW layer.
+                    # Check for existing  layer and copy to backup if it exists, Back it up to the correct DS, if the DS
+                    #doesnt exist create it
                     if arcpy.Exists(localFC):
-#                        try:
-#                            arcpy.env.workspace = localGDB
-#                            logFile.write ("\n" + "Deleting existing %s" % localFC)
-#                            arcpy.Delete_management(localFC)
-#
-#                        except:
-                        loadCount = loadCount - 1
-                        loadErrors = loadErrors + 1
-#                        logFile.write ("\n" + "Unable to delete existing new %s" % localFC)
-                        logFile.write ("\n" + "%s already exists. Check GDBDeploy for errors." % localFC)
-                        msg = arcpy.GetMessages()
-                        logFile.write (msg)
-                        isErr = True
-#                        Errmlmssg = Errmlmssg + "\n" + "Unable to delete existing NEW layer"
-                        Errmlmssg = Errmlmssg + "\n" + "NEW layer already exists. Check GDBDeploy for errors." + localFC
-#                        continue
+                        desc = arcpy.Describe(localFC)
+                        print("Dataset Type: {0}".format(desc.datasetType))
+
+                        if dataType == FEATURE_CLASS or dataType == ANNOTATION:
+                            nameparts = localFC.split("\\")
+                            desc = arcpy.Describe(nameparts[0] + "\\" + nameparts[1]  + "\\" + nameparts[2] + "\\" + nameparts[3])
+                            print nameparts[0] + "\\" + nameparts[1]  + "\\" + nameparts[2] + "\\" + nameparts[3]
+                            print ("Dataset Type: {0}".format(desc.datasetType))
+                            if desc.datasetType == "FeatureDataset":
+                                if arcpy.Exists(Staging_BAK  + "\\" +nameparts[3].split(".")[2]):
+                                    arcpy.CopyFeatures_management(localFC, Staging_BAK + '\\' + nameparts[3].split(".")[2]  + '\\' + fc)
+                                else:
+                                    arcpy.CreateFeatureDataset_management(Staging_BAK, nameparts[3].split(".")[2], localFC)
+                                    arcpy.CopyFeatures_management(localFC, Staging_BAK + '\\' + nameparts[3].split(".")[2]  + '\\' + fc)
+                            else:
+                                arcpy.CopyFeatures_management(localFC, Staging_BAK + '\\' + fc)
+                        elif dataType == TABLE:
+                            if arcpy.Exists(Staging_BAK + '\\' + fc):
+                                arcpy.Delete_management(Staging_BAK + '\\' + fc)
+                            arcpy.CopyRows_management(localFC, Staging_BAK + '\\' + fc)
+
 
 
                     arcpy.env.workspace = fGDB
@@ -531,7 +540,8 @@ def main(argv=None):
                         logFile.flush()
                         go = True
                         try:
-                            arcpy.FeatureClassToFeatureClass_conversion(fGDB + '\\' + fc, localGDB1, aliasName + NEW)
+                            #arcpy.FeatureClassToFeatureClass_conversion(fGDB + '\\' + fc, localGDB1, aliasName + NEW)
+
                             mydeploylist.write (fGDB + '\\' + fc  + "\n")
                             mydeploylist.flush()
                             logFile.write ("\n" + "Finished Importing %s" % localFC)
@@ -560,7 +570,7 @@ def main(argv=None):
                         logFile.write ("\n" + "Importing table %s" % localFC)
                         logFile.flush()
                         try:
-                            arcpy.TableToTable_conversion(fGDB + '\\' + fc, localGDB1, aliasName + NEW)
+                            #arcpy.TableToTable_conversion(fGDB + '\\' + fc, localGDB1, aliasName + NEW)
                             mydeploylist.write (fGDB + '\\' + fc  + "\n")
                             mydeploylist.flush()
                             logFile.write ("\n" + "Finished Importing %s" % localFC)

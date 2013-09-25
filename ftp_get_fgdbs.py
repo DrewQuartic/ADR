@@ -104,8 +104,7 @@ def main(inLogger = None, inManifest = None):
         if os.path.exists(outfolder):
             print "outfolder exists: " + outfolder
             try:
-
-                print ftp.nlst()
+                #print ftp.nlst()
                 if filename in ftp.nlst():
                     # Open the file for writing in binary mode
                     print 'Opening local file ' + filepath
