@@ -190,7 +190,7 @@ def checkIsNewLayer(fc,updateTableSrc):
                         logFile.write ("\n" + "%s has not been updated %s >= %s" % (fc,d1, d2))
                         print "NOTE: " + "%s has not been updated %s >= %s" % (fc,d1, d2)
                 else:
-                    logFile.write ("\n" + "%s is the subscriber's responsibility, and will not be updated" % fc)
+                    logFile.write ("\n" + "[0] is [1] responsibility, and will not be updated".format(fc, dept))
         del c1, r1
 
         if theCount == 0: # Layer does not exist in the local table
@@ -271,39 +271,7 @@ def getAlias(localFC):
         logFile.write ("\n" + "Unable to check %s for an alias name." % localFC)
         return aliasName
 
-def setAlias(localFC):
-    newName = localFC
-    localFC = stripSchema(localFC)
-    if len(localFC) > maxLayerNameLength:
-        i = 0
-        n = -2
-        newName = localFC[:maxLayerNameLength]
-        aliasCheck = aliasExists(newName, localFC)
-        while aliasCheck[0]:
-            i = i + 1
-            if i > 9:
-                n = -3
-            newName = newName[:n] + "_" + str(i)
-            aliasCheck = aliasExists(newName, localFC)
-        try:
-            if aliasCheck[1]:
-                logFile.write ("\n" + "%s is a new layer, but already has an alias name of %s" % (localFC,newName))
-            else:
-                c1 = arcpy.da.InsertCursor(updateTableSDE,["SANGIS_LAYER_NAME","ALIAS","UPDATE_DATE"])
-                c1.insertRow([localFC, newName , "1/1/1999"])
 
-                logFile.write ("\n" + "%s is a new layer" % localFC)
-                del c1
-
-            layerlogFile.write ("\n" + "The name of the new layer %s exceeds the max length and was given a short-name alias %s" % (localFC,newName))
-
-            return newName
-
-        except:
-            logFile.write ("\n" + "Unable to check %s for an alias name." % localFC)
-            return newName
-    else:
-        return newName
 
 def aliasExists(aliasName, localFC):  # SANGIS.LONG_NAME_ALIAS
     found = False
@@ -409,7 +377,7 @@ def main(argv=None):
         for fc in layerList:
             layerCount = layerCount + 1
 
-            #Check if layer is new or is newer than local copy
+            #Check if layer exists in the layers_Update_Table
             try:
                 print "BEFORE CHECK======"
                 doLoad, dataType, localDataset, cityFCName = checkIsNewLayer(fc,updateTableSrc)
@@ -456,7 +424,8 @@ def main(argv=None):
                 else:
                     localGDB1 = localGDB
 
-                catalogName = schema + str(fc)
+                #catalogName = schema + str(fc)
+                catalogName = schema + cityFCName
                 localFC = localGDB1 + "\\" + catalogName
 
                 print "START DOWNLOADING %s" % fc
@@ -483,109 +452,51 @@ def main(argv=None):
 
                 #Check if the layer exists and schemas match
                 layerExists = arcpy.Exists(localFC)
-                aliasName = str(fc)
+                #aliasName = str(fc)
                 if layerExists:
                     schemaChecked = checkSchemas(fGDB + '\\' + fc,localFC)
-                    # Check for alias names (especially for long layer names 30+ chars)
-                    aliasName = getAlias(fc)
-                else:
-                    if importNewLayers:
-                        schemaChecked = True
-                        # Set an alias for long layer names (30+ chars)
-                        aliasName = setAlias(fc)
+                    if schemaChecked:
+                        layerlogFile.write ("\n" + 'Schema check succeeded for %s'% localFC)
+                    else:
+                        if importNewLayers:
+                            schemaChecked = True
 
-                if aliasName != str(fc):
-                    localFC = localGDB1 + "\\" + schema + aliasName
 
                 if schemaChecked or forceLayerLoad:
-                    layerlogFile.write ("\n" + 'Schema check succeeded for %s'% localFC)
                     if not schemaChecked:
                         layerlogFile.write ("\n" + 'Schema check failed for %s, forcing load based on configuration'% localFC)
-
-                    #localFC = localFC + NEW
-
 #------------------------------------------Split Here-----------------------------------------------
-                    # Delete Existing _NEW layer if it already exists
                     # Check for existing  layer and copy to backup if it exists, Back it up to the correct DS, if the DS
                     #doesnt exist create it
                     if arcpy.Exists(localFC):
                         desc = arcpy.Describe(localFC)
-                        print("Dataset Type: {0}".format(desc.datasetType))
-
                         if dataType == FEATURE_CLASS or dataType == ANNOTATION:
                             nameparts = localFC.split("\\")
                             desc = arcpy.Describe(nameparts[0] + "\\" + nameparts[1]  + "\\" + nameparts[2] + "\\" + nameparts[3])
                             print nameparts[0] + "\\" + nameparts[1]  + "\\" + nameparts[2] + "\\" + nameparts[3]
                             print ("Dataset Type: {0}".format(desc.datasetType))
                             if desc.datasetType == "FeatureDataset":
-                                if arcpy.Exists(Staging_BAK  + "\\" +nameparts[3].split(".")[2]):
-                                    arcpy.CopyFeatures_management(localFC, Staging_BAK + '\\' + nameparts[3].split(".")[2]  + '\\' + fc)
-                                else:
+                                if not arcpy.Exists(Staging_BAK  + "\\" +nameparts[3].split(".")[2]):
                                     arcpy.CreateFeatureDataset_management(Staging_BAK, nameparts[3].split(".")[2], localFC)
-                                    arcpy.CopyFeatures_management(localFC, Staging_BAK + '\\' + nameparts[3].split(".")[2]  + '\\' + fc)
+                                arcpy.CopyFeatures_management(localFC, Staging_BAK + '\\' + nameparts[3].split(".")[2]  + '\\' + cityFCName)
                             else:
-                                arcpy.CopyFeatures_management(localFC, Staging_BAK + '\\' + fc)
+                                arcpy.CopyFeatures_management(localFC, Staging_BAK + '\\' + cityFCName)
+                            mydeploylist.write (fGDB + '\\' + fc  + "\n")
+                            mydeploylist.flush()
                         elif dataType == TABLE:
                             if arcpy.Exists(Staging_BAK + '\\' + fc):
                                 arcpy.Delete_management(Staging_BAK + '\\' + fc)
                             arcpy.CopyRows_management(localFC, Staging_BAK + '\\' + fc)
-
-
+                            mydeploylist.write (fGDB + '\\' + fc  + "\n")
+                            mydeploylist.flush()
+                    else:
+                        mydeploylist.write (fGDB + '\\' + fc  + "\n")
+                        mydeploylist.flush()
+                        # SDE Copy of the feature class not found
+                        logFile.write ("\n" + "****Error: unknown data type (%s) for import item %s" % (dataType, localFC))
 
                     arcpy.env.workspace = fGDB
 
-                    if dataType == FEATURE_CLASS or dataType == ANNOTATION:
-                        # Copy layer into *_new layer
-                        logFile.write ("\n" + "Importing feature class %s" % localFC)
-                        logFile.flush()
-                        go = True
-                        try:
-                            #arcpy.FeatureClassToFeatureClass_conversion(fGDB + '\\' + fc, localGDB1, aliasName + NEW)
-
-                            mydeploylist.write (fGDB + '\\' + fc  + "\n")
-                            mydeploylist.flush()
-                            logFile.write ("\n" + "Finished Importing %s" % localFC)
-                        except:
-                            go = False
-                            logFile.write ("\n" + "Unable to import %s" % localFC)
-                            msg = arcpy.GetMessages()
-                            logFile.write (msg)
-                            logFile.flush()
-                            isErr = True
-                            Errmlmssg = Errmlmssg + "\n" + "Unable to import FC: " + localFC
-
-                        #Analyze new layer if imported
-##                        if go:
-##                            logFile.write ("\n" + "Analyzing %s" % localFC)
-##                            try:
-##                                arcpy.Analyze_management(localFC, "BUSINESS")
-##                                logFile.write ("\n" + "Finished Analyzing BUSINESS Table for %s" % localFC)
-##                            except:
-##                                logFile.write ("\n" + "Unable to Analyze BUSINESS Table for %s" % localFC)
-##                                msg = arcpy.GetMessages()
-##                                logFile.write (msg)
-
-                    elif dataType == TABLE:
-                        # Copy table into *_new table
-                        logFile.write ("\n" + "Importing table %s" % localFC)
-                        logFile.flush()
-                        try:
-                            #arcpy.TableToTable_conversion(fGDB + '\\' + fc, localGDB1, aliasName + NEW)
-                            mydeploylist.write (fGDB + '\\' + fc  + "\n")
-                            mydeploylist.flush()
-                            logFile.write ("\n" + "Finished Importing %s" % localFC)
-                            tableCount = tableCount + 1
-                        except:
-                            logFile.write ("\n" + "Unable to import %s" % localFC)
-                            msg = arcpy.GetMessages()
-                            logFile.write (msg)
-                            logFile.flush()
-                            isErr = True
-                            Errmlmssg = Errmlmssg + "\n" + "Unable to import table"
-
-                    else:
-                        # Don't know what type of data copy to do, so do nothing
-                        logFile.write ("\n" + "****Error: unknown data type (%s) for import item %s" % (dataType, localFC))
 
                 # Schema did not match existing schema - log the exception
                 else:
@@ -650,14 +561,17 @@ Subject: %s
         print >>sys.stderr, err.msg
         print >>sys.stderr, "for help use --help"
         return 2
+
+
+
+    finally:
         try:
             arcpy.AcceptConnections(AdminGDB, True)
         except:
-            raise Exception, "Failed to unlock SDE Accounts"
             isErr = True
             Errmlmssg = Errmlmssg + "\n" + "Failed to unlock SDE Accounts"
-    logFile.close()
-    layerlogFile.close()
+        logFile.close()
+        layerlogFile.close()
 
 if __name__ == "__main__":
     sys.exit(main())

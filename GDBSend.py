@@ -11,12 +11,12 @@ from ftplib import FTP
 # Database Connections\\SHossack@atlasdev.sde
 # use the SHossack connection until 'city' account has been
 # granted read privileges to SDW.dbo.VW_LAYER_LAST_UPDATED
-source_location = 'Database Connections\\City@atlasdev.sde'
+source_location = 'D:\\BATCH_FILES\\ADR\\city@atlasdev.sde' #'Database Connections\\City@atlasdev.sde'
 layer_list_view = 'SDW.dbo.VW_LAYER_LAST_UPDATED'
 sde_db_prefix = 'SDW.CITY.'
 staging_location = 'D:\\Data\\OUT'
 destination_location = ''
-no_days_since_create = 10
+no_days_since_create = 21
 output_manifest = 'LAYERS_UPDATE_TABLE'
 ftp_host = "66.121.127.166"
 ftp_user = "ctygis"
@@ -40,6 +40,7 @@ def zipdir(path,zip,gdbName,lf):
 
             #zip.write(file)
 def zipFGDB(fDir,fName,lgF):
+    fDir = fDir + "\\"
     zip = zipfile.ZipFile(fDir + fName + '.zip', 'w')
     zipdir(fDir + fName + ".gdb",zip,fName + ".gdb\\",lgF)
 
@@ -111,7 +112,7 @@ def main():
                 #print staging_location + row.name + ".gdb"
                 logfile.write("[" + str(datetime.datetime.now()) +"]- " + "writing: " + staging_location + row.name + ".gdb" '\n')
                 print row.name
-                arcpy.FeatureClassToFeatureClass_conversion(fcPath,staging_location  + row.name + ".gdb", row.name)
+                arcpy.FeatureClassToFeatureClass_conversion(fcPath,staging_location + '\\'  + row.name + ".gdb", row.name)
                 tempDict = {}
                 for f in fieldList:
                     #print f.name
@@ -128,53 +129,60 @@ def main():
             #print fcPath + str(arcpy.Exists(fcPath))
             row = rows.next()
 
-        print output_manifest + " " + staging_location
-        createFileGDB(output_manifest,staging_location)
-        print staging_location + output_manifest + ".gdb"
-        logfile.write("[" + str(datetime.datetime.now()) +"]- " + "creating manifest: " + staging_location + output_manifest + ".gdb" + '\n')
-        arcpy.CreateTable_management(staging_location + output_manifest + ".gdb",output_manifest,fc)
+        if len(valueList) == 0:
+            print "No layers to send!"
+            logfile.write("No layers to send.\n")
+        else:
 
-        rows = arcpy.InsertCursor(staging_location + output_manifest + ".gdb\\" + output_manifest)
+            print output_manifest + " " + staging_location
+            createFileGDB(output_manifest,staging_location)
+            print staging_location + output_manifest + ".gdb"
+            logfile.write("[" + str(datetime.datetime.now()) +"]- " + "creating manifest: " + staging_location + output_manifest + ".gdb" + '\n')
+            arcpy.CreateTable_management(staging_location + '\\' +  output_manifest + ".gdb",output_manifest,fc)
 
-        for recDict in valueList:
-            row = rows.newRow()
-            for f in fieldList:
-                if f.name <> "OBJECTID":
-                    row.setValue(f.name,recDict[f.name])
-            rows.insertRow(row)
+            rows = arcpy.InsertCursor(staging_location + '\\' +  output_manifest + ".gdb\\" + output_manifest)
 
-        # clean up
-        del row
-        del rows
-
-        print 'ready to zip'
-        # zip them up
-        zip = zipfile.ZipFile(staging_location + output_manifest + '.zip', 'w')
-        zipdir(staging_location + output_manifest + ".gdb",zip,output_manifest + ".gdb\\",logfile)
-        zip.close()
+            for recDict in valueList:
+                row = rows.newRow()
+                for f in fieldList:
+                    if f.name <> "OBJECTID":
+                        row.setValue(f.name,recDict[f.name])
+                rows.insertRow(row)
 
 
-        # send to sangis ftp (pass the biscuits)
-        # open ftp connection
-        ftp = FTP(ftp_host)
-        ftp.login(ftp_user,ftp_password)
-        ftp.set_pasv(False)
-        ftp.cwd(ftp_output_folder)
 
-        for zf in glob.glob(staging_location + '*.zip'):
-
-
-            #ftpTXFRFile = open(staging_location + output_manifest + '.zip', 'rb')
-            #print "sending " + zf + " via ftp!"
-            logfile.write("[" + str(datetime.datetime.now()) +"]- " + "sending " + zf + " via ftp!" + '\n')
-
-            ftpTXFRFile = open(zf, 'rb')
-            ftp.storbinary('STOR ' + os.path.basename(zf), ftpTXFRFile)
-            ftpTXFRFile.close()
+            del row
+            del rows
+            print 'ready to zip'
+            # zip them up
+            zip = zipfile.ZipFile(staging_location + '\\' + output_manifest + '.zip', 'w')
+            zipdir(staging_location + '\\' + output_manifest + ".gdb",zip,output_manifest + ".gdb\\",logfile)
+            zip.close()
 
 
-        ftp.quit()
-        del ftp
+            # send to sangis ftp (pass the biscuits)
+            # open ftp connection
+            ftp = FTP(ftp_host)
+            ftp.login(ftp_user,ftp_password)
+            ftp.set_pasv(False)
+            ftp.cwd(ftp_output_folder)
+
+            for zf in glob.glob(staging_location + '*.zip'):
+
+
+                #ftpTXFRFile = open(staging_location + output_manifest + '.zip', 'rb')
+                #print "sending " + zf + " via ftp!"
+                logfile.write("[" + str(datetime.datetime.now()) +"]- " + "sending " + zf + " via ftp!" + '\n')
+
+                ftpTXFRFile = open(zf, 'rb')
+                ftp.storbinary('STOR ' + os.path.basename(zf), ftpTXFRFile)
+                ftpTXFRFile.close()
+
+
+            ftp.quit()
+            del ftp
+
+
 
         # we got er done
         endTime = datetime.datetime.now()
@@ -184,6 +192,9 @@ def main():
         logfile.write("[" + str(endTime) +"]- " + "FINISH----------Total elapsed time = %d:%02d:%02d" % (hours, mins, secs) + '\n')
         logfile.close()
     except Exception, e:
-            print e
+            print str(e)
+            logfile.write(str(e))
+            logfile.close()
+
 if __name__ == "__main__":
     main()

@@ -264,3 +264,87 @@
 2013-09-25 13:38:20,778 - ftp_get_fgdbs.py : line 47 - INFO - removed D:\DATA\IN\\SANGIS\\manifest.gdb
 2013-09-25 13:38:20,779 - ftp_get_fgdbs.py : line 139 - INFO - Extracting D:\DATA\IN\\SANGIS\\manifest.zip
 2013-09-25 13:38:20,819 - ftp_get_fgdbs.py : line 149 - INFO - -----------------Finished FTP Job---------------
+2013-09-25 16:26:46,390 - ftp_get_fgdbs.py : line 70 - INFO - -----------------Beginning FTP Job---------------
+2013-09-25 16:26:47,743 - ftp_get_fgdbs.py : line 36 - DEBUG - removing contents from D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-25 16:26:47,755 - ftp_get_fgdbs.py : line 42 - INFO - removed contents from D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-25 16:26:47,756 - ftp_get_fgdbs.py : line 45 - DEBUG - removing D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-25 16:26:47,763 - ftp_get_fgdbs.py : line 47 - INFO - removed D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-25 16:26:47,763 - ftp_get_fgdbs.py : line 139 - INFO - Extracting D:\DATA\IN\\SANGIS\\manifest.zip
+2013-09-25 16:26:47,803 - ftp_get_fgdbs.py : line 149 - INFO - -----------------Finished FTP Job---------------
+2013-09-25 18:05:25,082 - ftp_get_fgdbs.py : line 70 - INFO - -----------------Beginning FTP Job---------------
+2013-09-25 18:05:26,450 - ftp_get_fgdbs.py : line 36 - DEBUG - removing contents from D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-25 18:05:26,459 - ftp_get_fgdbs.py : line 42 - INFO - removed contents from D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-25 18:05:26,460 - ftp_get_fgdbs.py : line 45 - DEBUG - removing D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-25 18:05:26,463 - ftp_get_fgdbs.py : line 47 - INFO - removed D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-25 18:05:26,463 - ftp_get_fgdbs.py : line 139 - INFO - Extracting D:\DATA\IN\\SANGIS\\manifest.zip
+2013-09-25 18:05:26,516 - ftp_get_fgdbs.py : line 149 - INFO - -----------------Finished FTP Job---------------
+2013-09-26 08:43:20,329 - ftp_get_fgdbs.py : line 70 - INFO - -----------------Beginning FTP Job---------------
+2013-09-26 08:43:22,072 - ftp_get_fgdbs.py : line 36 - DEBUG - removing contents from D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 08:43:22,076 - ftp_get_fgdbs.py : line 42 - INFO - removed contents from D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 08:43:22,076 - ftp_get_fgdbs.py : line 45 - DEBUG - removing D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 08:43:22,082 - ftp_get_fgdbs.py : line 47 - INFO - removed D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 08:43:22,082 - ftp_get_fgdbs.py : line 139 - INFO - Extracting D:\DATA\IN\\SANGIS\\manifest.zip
+2013-09-26 08:43:22,124 - ftp_get_fgdbs.py : line 149 - INFO - -----------------Finished FTP Job---------------
+2013-09-26 11:00:03,927 - ftp_get_fgdbs.py : line 70 - INFO - -----------------Beginning FTP Job---------------
+2013-09-26 11:00:05,476 - ftp_get_fgdbs.py : line 36 - DEBUG - removing contents from D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 11:00:05,480 - ftp_get_fgdbs.py : line 42 - INFO - removed contents from D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 11:00:05,480 - ftp_get_fgdbs.py : line 45 - DEBUG - removing D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 11:00:05,533 - ftp_get_fgdbs.py : line 47 - INFO - removed D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 11:00:05,533 - ftp_get_fgdbs.py : line 139 - INFO - Extracting D:\DATA\IN\\SANGIS\\manifest.zip
+2013-09-26 11:00:05,552 - ftp_get_fgdbs.py : line 149 - INFO - -----------------Finished FTP Job---------------
+2013-09-26 15:24:36,861 - ftp_get_fgdbs.py : line 70 - INFO - -----------------Beginning FTP Job---------------
+2013-09-26 15:24:38,262 - ftp_get_fgdbs.py : line 36 - DEBUG - removing contents from D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 15:24:38,272 - ftp_get_fgdbs.py : line 42 - INFO - removed contents from D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 15:24:38,273 - ftp_get_fgdbs.py : line 45 - DEBUG - removing D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 15:24:38,276 - ftp_get_fgdbs.py : line 47 - INFO - removed D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 15:24:38,279 - ftp_get_fgdbs.py : line 139 - INFO - Extracting D:\DATA\IN\\SANGIS\\manifest.zip
+2013-09-26 15:24:38,319 - ftp_get_fgdbs.py : line 149 - INFO - -----------------Finished FTP Job---------------
+2013-09-26 15:59:45,203 - ftp_get_fgdbs.py : line 70 - INFO - -----------------Beginning FTP Job---------------
+2013-09-26 15:59:46,401 - ftp_get_fgdbs.py : line 36 - DEBUG - removing contents from D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 15:59:46,414 - ftp_get_fgdbs.py : line 42 - INFO - removed contents from D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 15:59:46,415 - ftp_get_fgdbs.py : line 45 - DEBUG - removing D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 15:59:46,418 - ftp_get_fgdbs.py : line 47 - INFO - removed D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 15:59:46,418 - ftp_get_fgdbs.py : line 139 - INFO - Extracting D:\DATA\IN\\SANGIS\\manifest.zip
+2013-09-26 15:59:46,454 - ftp_get_fgdbs.py : line 149 - INFO - -----------------Finished FTP Job---------------
+2013-09-26 16:04:10,529 - ftp_get_fgdbs.py : line 70 - INFO - -----------------Beginning FTP Job---------------
+2013-09-26 16:04:11,957 - ftp_get_fgdbs.py : line 36 - DEBUG - removing contents from D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 16:04:11,971 - ftp_get_fgdbs.py : line 42 - INFO - removed contents from D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 16:04:11,973 - ftp_get_fgdbs.py : line 45 - DEBUG - removing D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 16:04:11,974 - ftp_get_fgdbs.py : line 47 - INFO - removed D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 16:04:11,976 - ftp_get_fgdbs.py : line 139 - INFO - Extracting D:\DATA\IN\\SANGIS\\manifest.zip
+2013-09-26 16:04:12,012 - ftp_get_fgdbs.py : line 149 - INFO - -----------------Finished FTP Job---------------
+2013-09-26 16:08:22,052 - ftp_get_fgdbs.py : line 70 - INFO - -----------------Beginning FTP Job---------------
+2013-09-26 16:08:23,368 - ftp_get_fgdbs.py : line 36 - DEBUG - removing contents from D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 16:08:23,380 - ftp_get_fgdbs.py : line 42 - INFO - removed contents from D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 16:08:23,381 - ftp_get_fgdbs.py : line 45 - DEBUG - removing D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 16:08:23,384 - ftp_get_fgdbs.py : line 47 - INFO - removed D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 16:08:23,384 - ftp_get_fgdbs.py : line 139 - INFO - Extracting D:\DATA\IN\\SANGIS\\manifest.zip
+2013-09-26 16:08:23,424 - ftp_get_fgdbs.py : line 149 - INFO - -----------------Finished FTP Job---------------
+2013-09-26 16:13:24,476 - ftp_get_fgdbs.py : line 70 - INFO - -----------------Beginning FTP Job---------------
+2013-09-26 16:13:25,822 - ftp_get_fgdbs.py : line 36 - DEBUG - removing contents from D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 16:13:25,832 - ftp_get_fgdbs.py : line 42 - INFO - removed contents from D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 16:13:25,832 - ftp_get_fgdbs.py : line 45 - DEBUG - removing D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 16:13:25,836 - ftp_get_fgdbs.py : line 47 - INFO - removed D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 16:13:25,838 - ftp_get_fgdbs.py : line 139 - INFO - Extracting D:\DATA\IN\\SANGIS\\manifest.zip
+2013-09-26 16:13:25,875 - ftp_get_fgdbs.py : line 149 - INFO - -----------------Finished FTP Job---------------
+2013-09-26 16:17:07,128 - ftp_get_fgdbs.py : line 70 - INFO - -----------------Beginning FTP Job---------------
+2013-09-26 16:17:08,331 - ftp_get_fgdbs.py : line 36 - DEBUG - removing contents from D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 16:17:08,345 - ftp_get_fgdbs.py : line 42 - INFO - removed contents from D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 16:17:08,345 - ftp_get_fgdbs.py : line 45 - DEBUG - removing D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 16:17:08,348 - ftp_get_fgdbs.py : line 47 - INFO - removed D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 16:17:08,349 - ftp_get_fgdbs.py : line 139 - INFO - Extracting D:\DATA\IN\\SANGIS\\manifest.zip
+2013-09-26 16:17:08,388 - ftp_get_fgdbs.py : line 149 - INFO - -----------------Finished FTP Job---------------
+2013-09-26 16:31:10,440 - ftp_get_fgdbs.py : line 70 - INFO - -----------------Beginning FTP Job---------------
+2013-09-26 16:31:11,779 - ftp_get_fgdbs.py : line 36 - DEBUG - removing contents from D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 16:31:11,788 - ftp_get_fgdbs.py : line 42 - INFO - removed contents from D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 16:31:11,793 - ftp_get_fgdbs.py : line 45 - DEBUG - removing D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 16:31:11,796 - ftp_get_fgdbs.py : line 47 - INFO - removed D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 16:31:11,798 - ftp_get_fgdbs.py : line 139 - INFO - Extracting D:\DATA\IN\\SANGIS\\manifest.zip
+2013-09-26 16:31:11,835 - ftp_get_fgdbs.py : line 149 - INFO - -----------------Finished FTP Job---------------
+2013-09-26 16:47:47,638 - ftp_get_fgdbs.py : line 70 - INFO - -----------------Beginning FTP Job---------------
+2013-09-26 16:47:48,973 - ftp_get_fgdbs.py : line 36 - DEBUG - removing contents from D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 16:47:48,983 - ftp_get_fgdbs.py : line 42 - INFO - removed contents from D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 16:47:49,026 - ftp_get_fgdbs.py : line 45 - DEBUG - removing D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 16:47:49,029 - ftp_get_fgdbs.py : line 47 - INFO - removed D:\DATA\IN\\SANGIS\\manifest.gdb
+2013-09-26 16:47:49,030 - ftp_get_fgdbs.py : line 139 - INFO - Extracting D:\DATA\IN\\SANGIS\\manifest.zip
+2013-09-26 16:47:49,071 - ftp_get_fgdbs.py : line 149 - INFO - -----------------Finished FTP Job---------------

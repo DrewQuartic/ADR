@@ -1,144 +1,884 @@
 
-
 -----------------Beginning Update Job---------------
-Started at:01:38PM on September 25, 2013
-
-
-Update table = D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Started at:04:47PM on September 26, 2013
+Begining ftp of manifest
+*----------Number of layers read = 1, total elapsed time = 0:00:03
 -->Checking layer TBL_ROAD_NAME is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
 -->Checking layer TBL_ROAD_NAME is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
 Is Updateable
-TBL_ROAD_NAME was updated 2013-09-08 < 2013-09-15
-*----------Number of layers read = 1, total elapsed time = 0:00:04
-Importing table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.TBL_ROAD_NAME
-Finished Importing D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.TBL_ROAD_NAME
+TBL_ROAD_NAME will be updated as 2013-09-08 < 2013-09-15
+*----------Number of layers read = 2, total elapsed time = 0:00:20
 -->Checking layer ROADSEG_ALIAS is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
 -->Checking layer ROADSEG_ALIAS is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
 Is Updateable
-ROADSEG_ALIAS has not been updated 2013-10-07 >= 2013-09-14
-*----------Number of layers read = 2, total elapsed time = 0:28:14
+ROADSEG_ALIAS will not been updated as 2013-10-07 >= 2013-09-14
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.TBL_ROAD_NAME, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 3, total elapsed time = 0:00:20
 -->Checking layer ROADS_TRANSITION_RAMP is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
 -->Checking layer ROADS_TRANSITION_RAMP is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
 Is Updateable
-ROADS_TRANSITION_RAMP has not been updated 2013-10-07 >= 2013-09-14
-*----------Number of layers read = 3, total elapsed time = 0:28:14
+ROADS_TRANSITION_RAMP will not been updated as 2013-10-07 >= 2013-09-14
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.TBL_ROAD_NAME, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 4, total elapsed time = 0:00:20
 -->Checking layer ROADS_MAJOR is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
 -->Checking layer ROADS_MAJOR is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
 Is Updateable
-ROADS_MAJOR has not been updated 2013-10-07 >= 2013-09-14
-*----------Number of layers read = 4, total elapsed time = 0:28:15
+ROADS_MAJOR will not been updated as 2013-10-07 >= 2013-09-14
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.TBL_ROAD_NAME, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 5, total elapsed time = 0:00:20
 -->Checking layer ROADS_INTERSECTION is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
 -->Checking layer ROADS_INTERSECTION is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
 Is Updateable
-ROADS_INTERSECTION has not been updated 2013-10-07 >= 2013-09-14
-*----------Number of layers read = 5, total elapsed time = 0:28:15
+ROADS_INTERSECTION will not been updated as 2013-10-07 >= 2013-09-14
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.TBL_ROAD_NAME, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 6, total elapsed time = 0:00:21
 -->Checking layer ROADS_HIGHWAY is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
 -->Checking layer ROADS_HIGHWAY is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
 Is Updateable
-ROADS_HIGHWAY has not been updated 2013-10-07 >= 2013-09-14
-*----------Number of layers read = 6, total elapsed time = 0:28:15
+ROADS_HIGHWAY will not been updated as 2013-10-07 >= 2013-09-14
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.TBL_ROAD_NAME, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 7, total elapsed time = 0:00:21
 -->Checking layer ROADS_FREEWAY_RAMP is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
 -->Checking layer ROADS_FREEWAY_RAMP is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
 Is Updateable
-ROADS_FREEWAY_RAMP has not been updated 2013-10-07 >= 2013-09-14
-*----------Number of layers read = 7, total elapsed time = 0:28:15
+ROADS_FREEWAY_RAMP will not been updated as 2013-10-07 >= 2013-09-14
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.TBL_ROAD_NAME, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 8, total elapsed time = 0:00:21
 -->Checking layer ROADS_FREEWAY is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
 -->Checking layer ROADS_FREEWAY is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
 Is Updateable
-ROADS_FREEWAY has not been updated 2013-10-07 >= 2013-09-14
-*----------Number of layers read = 8, total elapsed time = 0:28:15
+ROADS_FREEWAY will not been updated as 2013-10-07 >= 2013-09-14
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.TBL_ROAD_NAME, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 9, total elapsed time = 0:00:21
 -->Checking layer ROADS_COLLECTOR is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
 -->Checking layer ROADS_COLLECTOR is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
 Is Updateable
-ROADS_COLLECTOR has not been updated 2013-10-07 >= 2013-09-14
-*----------Number of layers read = 9, total elapsed time = 0:28:16
+ROADS_COLLECTOR will not been updated as 2013-10-07 >= 2013-09-14
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.TBL_ROAD_NAME, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 10, total elapsed time = 0:00:21
 -->Checking layer ROADS_ALL is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
 -->Checking layer ROADS_ALL is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
 Is Updateable
-ROADS_ALL has not been updated 2013-10-07 >= 2013-09-14
-*----------Number of layers read = 10, total elapsed time = 0:28:16
+ROADS_ALL will not been updated as 2013-10-07 >= 2013-09-14
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.TBL_ROAD_NAME, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 11, total elapsed time = 0:00:21
 -->Checking layer PARCELS_ALL is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
 -->Checking layer PARCELS_ALL is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
 Is Updateable
-PARCELS_ALL has not been updated 2013-10-07 >= 2013-09-14
-*----------Number of layers read = 11, total elapsed time = 0:28:16
+PARCELS_ALL will not been updated as 2013-10-07 >= 2013-09-14
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.TBL_ROAD_NAME, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 12, total elapsed time = 0:00:22
 -->Checking layer PARCEL is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
 -->Checking layer PARCEL is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
 Is Updateable
-PARCEL has not been updated 2013-10-07 >= 2013-09-14
-*----------Number of layers read = 12, total elapsed time = 0:28:16
+PARCEL will not been updated as 2013-10-07 >= 2013-09-14
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.TBL_ROAD_NAME, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 13, total elapsed time = 0:00:22
 -->Checking layer LOTS is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
 -->Checking layer LOTS is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
 Is Updateable
-LOTS has not been updated 2013-10-07 >= 2013-09-14
-*----------Number of layers read = 13, total elapsed time = 0:28:16
+LOTS will not been updated as 2013-10-07 >= 2013-09-14
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.TBL_ROAD_NAME, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 14, total elapsed time = 0:00:22
 -->Checking layer ESMT_OPEN_SPACE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
 -->Checking layer ESMT_OPEN_SPACE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
 Is Updateable
-ESMT_OPEN_SPACE was updated 2013-09-08 < 2013-09-15
-*----------Number of layers read = 14, total elapsed time = 0:28:17
-Importing feature class D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ESMT_OPEN_SPACE
-Finished Importing D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ESMT_OPEN_SPACE
+ESMT_OPEN_SPACE will be updated as 2013-09-08 < 2013-09-15
+*----------Number of layers read = 15, total elapsed time = 0:01:18
 -->Checking layer ADDRAPN is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
 -->Checking layer ADDRAPN is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
 Is Updateable
-ADDRAPN was updated 2013-09-08 < 2013-09-15
-*----------Number of layers read = 15, total elapsed time = 0:34:43
-Importing feature class D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ADDRAPN
-Finished Importing D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ADDRAPN
+ADDRAPN will not been updated as 2013-10-08 >= 2013-09-15
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ESMT_OPEN_SPACE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 16, total elapsed time = 0:01:18
 -->Checking layer ASR_BOOK is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
 -->Checking layer ASR_BOOK is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
 Is Updateable
-ASR_BOOK was updated 2013-09-08 < 2013-09-15
-*----------Number of layers read = 16, total elapsed time = 0:42:01
-Importing feature class D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ASR_BOOK
-Finished Importing D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ASR_BOOK
+ASR_BOOK will be updated as 2013-09-08 < 2013-09-15
+*----------Number of layers read = 17, total elapsed time = 0:02:03
 -->Checking layer CENSUS_MGRF is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
 -->Checking layer CENSUS_MGRF is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
 Is Updateable
-CENSUS_MGRF was updated 2013-09-08 < 2013-09-15
-*----------Number of layers read = 17, total elapsed time = 0:43:29
-Importing feature class D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.CENSUS_MGRF
-Finished Importing D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.CENSUS_MGRF
+CENSUS_MGRF will not been updated as 2013-10-08 >= 2013-09-15
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ASR_BOOK, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 18, total elapsed time = 0:02:04
 -->Checking layer INDIAN_RESERVATIONS is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
 -->Checking layer INDIAN_RESERVATIONS is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
 Is Updateable
-INDIAN_RESERVATIONS was updated 2013-09-08 < 2013-09-15
-*----------Number of layers read = 18, total elapsed time = 0:46:06
-Importing feature class D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.INDIAN_RESERVATIONS
-Finished Importing D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.INDIAN_RESERVATIONS
+INDIAN_RESERVATIONS will be updated as 2013-09-08 < 2013-09-15
+*----------Number of layers read = 19, total elapsed time = 0:02:45
 -->Checking layer JUR_PUBLIC_SAFETY is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
 -->Checking layer JUR_PUBLIC_SAFETY is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
 Is Updateable
-JUR_PUBLIC_SAFETY was updated 2013-09-08 < 2013-09-15
-*----------Number of layers read = 19, total elapsed time = 0:47:18
-Importing feature class D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.JUR_PUBLIC_SAFETY
-Finished Importing D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.JUR_PUBLIC_SAFETY
+JUR_PUBLIC_SAFETY will not been updated as 2013-10-08 >= 2013-09-15
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.INDIAN_RESERVATIONS, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 20, total elapsed time = 0:02:46
 -->Checking layer LANDBASE_BOUNDARIES is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
 -->Checking layer LANDBASE_BOUNDARIES is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
 Is Updateable
-LANDBASE_BOUNDARIES has not been updated 2013-10-07 >= 2013-09-14
-*----------Number of layers read = 20, total elapsed time = 0:48:17
+LANDBASE_BOUNDARIES will not been updated as 2013-10-07 >= 2013-09-14
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.INDIAN_RESERVATIONS, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 21, total elapsed time = 0:02:46
 -->Checking layer LAW_BEATS is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
 -->Checking layer LAW_BEATS is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
 Is Updateable
-LAW_BEATS was updated 2013-09-08 < 2013-09-15
-*----------Number of layers read = 21, total elapsed time = 0:48:17
-Importing feature class D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.LAW_BEATS
-Finished Importing D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.LAW_BEATS
+LAW_BEATS will not been updated as 2013-10-08 >= 2013-09-15
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.INDIAN_RESERVATIONS, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 22, total elapsed time = 0:02:46
 -->Checking layer RW_STATION is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
 -->Checking layer RW_STATION is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
 Unable to check if RW_STATION is new or was updated.
 ****Error checking if new layer: RW_STATION
-*----------Number of layers read = 22, total elapsed time = 0:49:24
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.INDIAN_RESERVATIONS, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 23, total elapsed time = 0:02:46
 -->Checking layer RW_TANK is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
 -->Checking layer RW_TANK is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
 Unable to check if RW_TANK is new or was updated.
 ****Error checking if new layer: RW_TANK
-*----------Number of layers read = 23, total elapsed time = 0:49:24
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.INDIAN_RESERVATIONS, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 24, total elapsed time = 0:02:46
 -->Checking layer S_BLOW_OFF is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
 -->Checking layer S_BLOW_OFF is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
 Is Updateable
-S_BLOW_OFF was updated 2012-12-16 < 2013-09-15
-*----------Number of layers read = 24, total elapsed time = 0:49:24
-Importing feature class D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.BLOW_OFF
+S_BLOW_OFF will be updated as 2012-12-16 < 2013-09-15
+*----------Number of layers read = 25, total elapsed time = 0:02:57
+-->Checking layer S_CLEAN_OUT is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer S_CLEAN_OUT is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+S_CLEAN_OUT will be updated as 2012-12-16 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_CLEAN_OUT, of sangis layer: S_CLEAN_OUT 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_CLEAN_OUT not found in SDE, not backed up
+*----------Number of layers read = 26, total elapsed time = 0:03:06
+-->Checking layer S_LATERAL is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer S_LATERAL is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+S_LATERAL will be updated as 2012-12-16 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_S_LATERAL, of sangis layer: S_LATERAL 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_S_LATERAL not found in SDE, not backed up
+*----------Number of layers read = 27, total elapsed time = 0:05:16
+-->Checking layer S_LATERAL_REMOVED_ABANDONED is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer S_LATERAL_REMOVED_ABANDONED is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+S_LATERAL_REMOVED_ABANDONED will be updated as 2012-12-16 < 2013-09-15
+*----------Number of layers read = 28, total elapsed time = 0:05:39
+-->Checking layer S_MAIN is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer S_MAIN is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+S_MAIN will be updated as 2012-12-16 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_MAIN, of sangis layer: S_MAIN 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_MAIN not found in SDE, not backed up
+*----------Number of layers read = 29, total elapsed time = 0:06:41
+-->Checking layer S_MAIN_REMOVED_ABANDONED is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer S_MAIN_REMOVED_ABANDONED is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+S_MAIN_REMOVED_ABANDONED will be updated as 2012-12-16 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_MAIN_REMOVED_ABANDONED, of sangis layer: S_MAIN_REMOVED_ABANDONED 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_MAIN_REMOVED_ABANDONED not found in SDE, not backed up
+*----------Number of layers read = 30, total elapsed time = 0:06:58
+-->Checking layer S_MANHOLE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer S_MANHOLE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+S_MANHOLE will be updated as 2012-12-16 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_MANHOLE, of sangis layer: S_MANHOLE 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_MANHOLE not found in SDE, not backed up
+*----------Number of layers read = 31, total elapsed time = 0:07:34
+-->Checking layer RW_AIR_VALVE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RW_AIR_VALVE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if RW_AIR_VALVE is new or was updated.
+****Error checking if new layer: RW_AIR_VALVE
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_MANHOLE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 32, total elapsed time = 0:07:34
+-->Checking layer RW_BACK_FLOW is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RW_BACK_FLOW is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if RW_BACK_FLOW is new or was updated.
+****Error checking if new layer: RW_BACK_FLOW
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_MANHOLE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 33, total elapsed time = 0:07:35
+-->Checking layer RW_BLOW_OFF is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RW_BLOW_OFF is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if RW_BLOW_OFF is new or was updated.
+****Error checking if new layer: RW_BLOW_OFF
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_MANHOLE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 34, total elapsed time = 0:07:35
+-->Checking layer RW_CAP is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RW_CAP is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if RW_CAP is new or was updated.
+****Error checking if new layer: RW_CAP
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_MANHOLE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 35, total elapsed time = 0:07:35
+-->Checking layer RW_CORP_STOP is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RW_CORP_STOP is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if RW_CORP_STOP is new or was updated.
+****Error checking if new layer: RW_CORP_STOP
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_MANHOLE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 36, total elapsed time = 0:07:35
+-->Checking layer RW_METER is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RW_METER is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if RW_METER is new or was updated.
+****Error checking if new layer: RW_METER
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_MANHOLE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 37, total elapsed time = 0:07:35
+-->Checking layer RW_PIPE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RW_PIPE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if RW_PIPE is new or was updated.
+****Error checking if new layer: RW_PIPE
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_MANHOLE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 38, total elapsed time = 0:07:35
+-->Checking layer RW_PUMP is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RW_PUMP is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if RW_PUMP is new or was updated.
+****Error checking if new layer: RW_PUMP
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_MANHOLE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 39, total elapsed time = 0:07:35
+-->Checking layer RW_PUMP_STATION is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RW_PUMP_STATION is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if RW_PUMP_STATION is new or was updated.
+****Error checking if new layer: RW_PUMP_STATION
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_MANHOLE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 40, total elapsed time = 0:07:35
+-->Checking layer RW_REDUCER is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RW_REDUCER is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if RW_REDUCER is new or was updated.
+****Error checking if new layer: RW_REDUCER
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_MANHOLE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 41, total elapsed time = 0:07:36
+-->Checking layer RW_REGULATOR_VALVE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RW_REGULATOR_VALVE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if RW_REGULATOR_VALVE is new or was updated.
+****Error checking if new layer: RW_REGULATOR_VALVE
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_MANHOLE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 42, total elapsed time = 0:07:36
+-->Checking layer RW_SAMPLE_LOCATION is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RW_SAMPLE_LOCATION is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if RW_SAMPLE_LOCATION is new or was updated.
+****Error checking if new layer: RW_SAMPLE_LOCATION
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_MANHOLE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 43, total elapsed time = 0:07:36
+-->Checking layer RW_SERVICE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RW_SERVICE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if RW_SERVICE is new or was updated.
+****Error checking if new layer: RW_SERVICE
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_MANHOLE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 44, total elapsed time = 0:07:36
+-->Checking layer S_MANHOLE_REMOVED_ABANDONED is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer S_MANHOLE_REMOVED_ABANDONED is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+S_MANHOLE_REMOVED_ABANDONED will be updated as 2012-12-16 < 2013-09-15
+*----------Number of layers read = 45, total elapsed time = 0:07:55
+-->Checking layer S_METER is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer S_METER is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+S_METER will be updated as 2012-12-16 < 2013-09-15
+*----------Number of layers read = 46, total elapsed time = 0:08:06
+-->Checking layer S_NODE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer S_NODE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+S_NODE will be updated as 2012-12-16 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_NODE, of sangis layer: S_NODE 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_NODE not found in SDE, not backed up
+*----------Number of layers read = 47, total elapsed time = 0:08:10
+-->Checking layer S_PLUG is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer S_PLUG is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+S_PLUG will be updated as 2012-12-16 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_PLUG, of sangis layer: S_PLUG 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_PLUG not found in SDE, not backed up
+*----------Number of layers read = 48, total elapsed time = 0:08:22
+-->Checking layer S_PUMP is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer S_PUMP is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+S_PUMP will be updated as 2012-12-16 < 2013-09-15
+*----------Number of layers read = 49, total elapsed time = 0:08:32
+-->Checking layer S_PUMPSTA is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer S_PUMPSTA is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+S_PUMPSTA will be updated as 2012-12-16 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_PUMPSTA, of sangis layer: S_PUMPSTA 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_PUMPSTA not found in SDE, not backed up
+*----------Number of layers read = 50, total elapsed time = 0:08:35
+-->Checking layer S_PUMPSTN is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer S_PUMPSTN is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+S_PUMPSTN will be updated as 2012-12-16 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_PUMPSTN, of sangis layer: S_PUMPSTN 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_PUMPSTN not found in SDE, not backed up
+*----------Number of layers read = 51, total elapsed time = 0:08:39
+-->Checking layer S_REDUCER is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer S_REDUCER is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+S_REDUCER will be updated as 2012-12-16 < 2013-09-15
+*----------Number of layers read = 52, total elapsed time = 0:08:49
+-->Checking layer S_STATION is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer S_STATION is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+S_STATION will be updated as 2012-12-16 < 2013-09-15
+*----------Number of layers read = 53, total elapsed time = 0:09:01
+-->Checking layer S_STATIONP is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer S_STATIONP is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+S_STATIONP will be updated as 2012-12-16 < 2013-09-15
+*----------Number of layers read = 54, total elapsed time = 0:09:12
+-->Checking layer S_STBL is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer S_STBL is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+S_STBL will be updated as 2012-12-16 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_STBL, of sangis layer: S_STBL 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_STBL not found in SDE, not backed up
+*----------Number of layers read = 55, total elapsed time = 0:09:23
+-->Checking layer S_TANK is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer S_TANK is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+S_TANK will be updated as 2012-12-16 < 2013-09-15
+*----------Number of layers read = 56, total elapsed time = 0:09:33
+-->Checking layer S_TREATMENT_PLANT is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer S_TREATMENT_PLANT is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+S_TREATMENT_PLANT will be updated as 2012-12-16 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_TREATMENT_PLANT, of sangis layer: S_TREATMENT_PLANT 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SEWER\SDW.CITY.S_TREATMENT_PLANT not found in SDE, not backed up
+*----------Number of layers read = 57, total elapsed time = 0:09:36
+-->Checking layer S_VALVE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer S_VALVE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+S_VALVE will be updated as 2012-12-16 < 2013-09-15
+*----------Number of layers read = 58, total elapsed time = 0:09:47
+-->Checking layer RIGHT_OF_WAY is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RIGHT_OF_WAY is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+RIGHT_OF_WAY will be updated as 2013-09-07 < 2013-09-14
+*----------Number of layers read = 59, total elapsed time = 0:12:31
+-->Checking layer RW_VALVE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RW_VALVE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if RW_VALVE is new or was updated.
+****Error checking if new layer: RW_VALVE
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.RIGHT_OF_WAY, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 60, total elapsed time = 0:12:31
+-->Checking layer RWTR_AIR_VALVE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RWTR_AIR_VALVE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+RWTR_AIR_VALVE will be updated as 2013-04-21 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_AIR_VALVE, of sangis layer: RWTR_AIR_VALVE 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_AIR_VALVE not found in SDE, not backed up
+*----------Number of layers read = 61, total elapsed time = 0:12:35
+-->Checking layer RWTR_BACK_FLOW is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RWTR_BACK_FLOW is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+RWTR_BACK_FLOW will be updated as 2013-04-21 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_BACK_FLOW, of sangis layer: RWTR_BACK_FLOW 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_BACK_FLOW not found in SDE, not backed up
+*----------Number of layers read = 62, total elapsed time = 0:12:38
+-->Checking layer RWTR_BLOW_OFF is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RWTR_BLOW_OFF is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+RWTR_BLOW_OFF will be updated as 2013-04-21 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_BLOW_OFF, of sangis layer: RWTR_BLOW_OFF 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_BLOW_OFF not found in SDE, not backed up
+*----------Number of layers read = 63, total elapsed time = 0:12:42
+-->Checking layer RWTR_CAP is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RWTR_CAP is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+RWTR_CAP will be updated as 2013-04-21 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_CAP, of sangis layer: RWTR_CAP 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_CAP not found in SDE, not backed up
+*----------Number of layers read = 64, total elapsed time = 0:12:45
+-->Checking layer RWTR_CORP_STOP is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RWTR_CORP_STOP is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+RWTR_CORP_STOP will be updated as 2013-04-21 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_CORP_STOP, of sangis layer: RWTR_CORP_STOP 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_CORP_STOP not found in SDE, not backed up
+*----------Number of layers read = 65, total elapsed time = 0:12:48
+-->Checking layer RWTR_METER is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RWTR_METER is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+RWTR_METER will be updated as 2013-04-21 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_METER, of sangis layer: RWTR_METER 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_METER not found in SDE, not backed up
+*----------Number of layers read = 66, total elapsed time = 0:12:52
+-->Checking layer RWTR_PIPE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RWTR_PIPE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+RWTR_PIPE will be updated as 2013-04-21 < 2013-09-15
+*----------Number of layers read = 67, total elapsed time = 0:13:06
+-->Checking layer RWTR_PUMP is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RWTR_PUMP is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+RWTR_PUMP will be updated as 2013-04-21 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_PUMP, of sangis layer: RWTR_PUMP 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_PUMP not found in SDE, not backed up
+*----------Number of layers read = 68, total elapsed time = 0:13:09
+-->Checking layer RWTR_REDUCER is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RWTR_REDUCER is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+RWTR_REDUCER will be updated as 2013-04-21 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_REDUCER, of sangis layer: RWTR_REDUCER 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_REDUCER not found in SDE, not backed up
+*----------Number of layers read = 69, total elapsed time = 0:13:13
+-->Checking layer RWTR_REGULATOR_VALVE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RWTR_REGULATOR_VALVE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+RWTR_REGULATOR_VALVE will be updated as 2013-04-21 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_REGULATOR_VALVE, of sangis layer: RWTR_REGULATOR_VALVE 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_REGULATOR_VALVE not found in SDE, not backed up
+*----------Number of layers read = 70, total elapsed time = 0:13:16
+-->Checking layer RWTR_SAMPLE_LOCATION is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RWTR_SAMPLE_LOCATION is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+RWTR_SAMPLE_LOCATION will be updated as 2013-04-21 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_SAMPLE_LOCATION, of sangis layer: RWTR_SAMPLE_LOCATION 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_SAMPLE_LOCATION not found in SDE, not backed up
+*----------Number of layers read = 71, total elapsed time = 0:13:19
+-->Checking layer RWTR_SERVICE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RWTR_SERVICE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+RWTR_SERVICE will be updated as 2013-04-21 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_SERVICE, of sangis layer: RWTR_SERVICE 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_SERVICE not found in SDE, not backed up
+*----------Number of layers read = 72, total elapsed time = 0:13:25
+-->Checking layer RWTR_STATION is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RWTR_STATION is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+RWTR_STATION will be updated as 2013-04-21 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_STATION, of sangis layer: RWTR_STATION 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_STATION not found in SDE, not backed up
+*----------Number of layers read = 73, total elapsed time = 0:13:28
+-->Checking layer RWTR_TANK is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RWTR_TANK is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+RWTR_TANK will be updated as 2013-04-21 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_TANK, of sangis layer: RWTR_TANK 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_TANK not found in SDE, not backed up
+*----------Number of layers read = 74, total elapsed time = 0:13:31
+-->Checking layer RWTR_VALVE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RWTR_VALVE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+RWTR_VALVE will be updated as 2013-04-21 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_VALVE, of sangis layer: RWTR_VALVE 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.RWATER\SDW.CITY.RWTR_VALVE not found in SDE, not backed up
+*----------Number of layers read = 75, total elapsed time = 0:13:38
+-->Checking layer S_AIR_VALVE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer S_AIR_VALVE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+S_AIR_VALVE will be updated as 2012-12-16 < 2013-09-15
+*----------Number of layers read = 76, total elapsed time = 0:13:48
+-->Checking layer SUBDIVISION is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer SUBDIVISION is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+SUBDIVISION will be updated as 2013-09-07 < 2013-09-14
+*----------Number of layers read = 77, total elapsed time = 0:14:35
+-->Checking layer SUBDIVISION_LINE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer SUBDIVISION_LINE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+SUBDIVISION_LINE will be updated as 2013-09-07 < 2013-09-14
+*----------Number of layers read = 78, total elapsed time = 0:15:40
+-->Checking layer W_AIR_VALVE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_AIR_VALVE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_AIR_VALVE is new or was updated.
+****Error checking if new layer: W_AIR_VALVE
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.SUBDIVISION_LINE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 79, total elapsed time = 0:15:40
+-->Checking layer W_AQUEDUCT is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_AQUEDUCT is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_AQUEDUCT is new or was updated.
+****Error checking if new layer: W_AQUEDUCT
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.SUBDIVISION_LINE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 80, total elapsed time = 0:15:40
+-->Checking layer W_BACK_FLOW is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_BACK_FLOW is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_BACK_FLOW is new or was updated.
+****Error checking if new layer: W_BACK_FLOW
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.SUBDIVISION_LINE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 81, total elapsed time = 0:15:41
+-->Checking layer W_BLOW_OFF is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_BLOW_OFF is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_BLOW_OFF is new or was updated.
+****Error checking if new layer: W_BLOW_OFF
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.SUBDIVISION_LINE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 82, total elapsed time = 0:15:41
+-->Checking layer W_CAP is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_CAP is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_CAP is new or was updated.
+****Error checking if new layer: W_CAP
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.SUBDIVISION_LINE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 83, total elapsed time = 0:15:41
+-->Checking layer W_CHANNEL is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_CHANNEL is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_CHANNEL is new or was updated.
+****Error checking if new layer: W_CHANNEL
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.SUBDIVISION_LINE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 84, total elapsed time = 0:15:41
+-->Checking layer W_CORP_STOP is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_CORP_STOP is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_CORP_STOP is new or was updated.
+****Error checking if new layer: W_CORP_STOP
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.SUBDIVISION_LINE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 85, total elapsed time = 0:15:41
+-->Checking layer W_CREEK is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_CREEK is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_CREEK is new or was updated.
+****Error checking if new layer: W_CREEK
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.SUBDIVISION_LINE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 86, total elapsed time = 0:15:41
+-->Checking layer W_DAM is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_DAM is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_DAM is new or was updated.
+****Error checking if new layer: W_DAM
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.SUBDIVISION_LINE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 87, total elapsed time = 0:15:41
+-->Checking layer W_DIVERSION_CONNECTION is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_DIVERSION_CONNECTION is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_DIVERSION_CONNECTION is new or was updated.
+****Error checking if new layer: W_DIVERSION_CONNECTION
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.SUBDIVISION_LINE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 88, total elapsed time = 0:15:41
+-->Checking layer W_FLUME is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_FLUME is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_FLUME is new or was updated.
+****Error checking if new layer: W_FLUME
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.SUBDIVISION_LINE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 89, total elapsed time = 0:15:42
+-->Checking layer W_HYDRANT is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_HYDRANT is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_HYDRANT is new or was updated.
+****Error checking if new layer: W_HYDRANT
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.SUBDIVISION_LINE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 90, total elapsed time = 0:15:42
+-->Checking layer W_WELL is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_WELL is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_WELL is new or was updated.
+****Error checking if new layer: W_WELL
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.SUBDIVISION_LINE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 91, total elapsed time = 0:15:42
+-->Checking layer WTR_AIR_VALVE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_AIR_VALVE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_AIR_VALVE will be updated as 2013-08-18 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_AIR_VALVE, of sangis layer: WTR_AIR_VALVE 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_AIR_VALVE not found in SDE, not backed up
+*----------Number of layers read = 92, total elapsed time = 0:15:48
+-->Checking layer WTR_AQUEDUCT is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_AQUEDUCT is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_AQUEDUCT will be updated as 2013-08-18 < 2013-09-15
+*----------Number of layers read = 93, total elapsed time = 0:15:58
+-->Checking layer WTR_BACK_FLOW is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_BACK_FLOW is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_BACK_FLOW will be updated as 2013-08-18 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_BACK_FLOW, of sangis layer: WTR_BACK_FLOW 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_BACK_FLOW not found in SDE, not backed up
+*----------Number of layers read = 94, total elapsed time = 0:16:05
+-->Checking layer WTR_BLOW_OFF is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_BLOW_OFF is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_BLOW_OFF will be updated as 2013-08-18 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WTR_BLOW_OFF, of sangis layer: WTR_BLOW_OFF 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WTR_BLOW_OFF not found in SDE, not backed up
+*----------Number of layers read = 95, total elapsed time = 0:16:13
+-->Checking layer WTR_CAP is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_CAP is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_CAP will be updated as 2013-08-18 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_CAP, of sangis layer: WTR_CAP 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_CAP not found in SDE, not backed up
+*----------Number of layers read = 96, total elapsed time = 0:16:20
+-->Checking layer WTR_CHANNEL is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_CHANNEL is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_CHANNEL will be updated as 2013-08-18 < 2013-09-15
+*----------Number of layers read = 97, total elapsed time = 0:16:30
+-->Checking layer WTR_CORP_STOP is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_CORP_STOP is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_CORP_STOP will be updated as 2013-08-18 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_CORP_STOP, of sangis layer: WTR_CORP_STOP 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_CORP_STOP not found in SDE, not backed up
+*----------Number of layers read = 98, total elapsed time = 0:16:33
+-->Checking layer WTR_CREEK is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_CREEK is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_CREEK will be updated as 2013-08-18 < 2013-09-15
+*----------Number of layers read = 99, total elapsed time = 0:16:42
+-->Checking layer WTR_DIVERSION_CONNECTION is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_DIVERSION_CONNECTION is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_DIVERSION_CONNECTION will be updated as 2013-08-18 < 2013-09-15
+*----------Number of layers read = 100, total elapsed time = 0:16:52
+-->Checking layer WTR_FLUME is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_FLUME is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_FLUME will be updated as 2013-08-18 < 2013-09-15
+*----------Number of layers read = 101, total elapsed time = 0:17:01
+-->Checking layer WTR_HYDRANT is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_HYDRANT is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_HYDRANT will be updated as 2013-08-18 < 2013-09-15
+*----------Number of layers read = 102, total elapsed time = 0:17:33
+-->Checking layer WTR_METER is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_METER is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_METER will be updated as 2013-08-18 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_METER, of sangis layer: WTR_METER 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_METER not found in SDE, not backed up
+*----------Number of layers read = 103, total elapsed time = 0:19:45
+-->Checking layer WTR_PIPE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_PIPE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_PIPE will be updated as 2013-08-18 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_PIPE, of sangis layer: WTR_PIPE 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_PIPE not found in SDE, not backed up
+*----------Number of layers read = 104, total elapsed time = 0:21:00
+-->Checking layer WTR_PITOT_TAP is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_PITOT_TAP is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_PITOT_TAP will be updated as 2013-08-18 < 2013-09-15
+*----------Number of layers read = 105, total elapsed time = 0:21:09
+-->Checking layer WTR_PUMP is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_PUMP is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_PUMP will be updated as 2013-08-18 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_PUMP, of sangis layer: WTR_PUMP 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_PUMP not found in SDE, not backed up
+*----------Number of layers read = 106, total elapsed time = 0:21:13
+-->Checking layer WTR_REDUCER is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_REDUCER is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_REDUCER will be updated as 2013-08-18 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_REDUCER, of sangis layer: WTR_REDUCER 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_REDUCER not found in SDE, not backed up
+*----------Number of layers read = 107, total elapsed time = 0:21:22
+-->Checking layer WTR_REGULATOR_VALVE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_REGULATOR_VALVE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_REGULATOR_VALVE will be updated as 2013-08-18 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_REGULATOR_VALVE, of sangis layer: WTR_REGULATOR_VALVE 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_REGULATOR_VALVE not found in SDE, not backed up
+*----------Number of layers read = 108, total elapsed time = 0:21:26
+-->Checking layer WTR_SAMPLE_LOCATION is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_SAMPLE_LOCATION is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_SAMPLE_LOCATION will be updated as 2013-08-18 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_SAMPLE_LOCATION, of sangis layer: WTR_SAMPLE_LOCATION 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_SAMPLE_LOCATION not found in SDE, not backed up
+*----------Number of layers read = 109, total elapsed time = 0:21:29
+-->Checking layer WTR_SERVICE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_SERVICE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_SERVICE will be updated as 2013-08-18 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_SERVICE, of sangis layer: WTR_SERVICE 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_SERVICE not found in SDE, not backed up
+*----------Number of layers read = 110, total elapsed time = 0:24:24
+-->Checking layer WTR_STATION is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_STATION is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_STATION will be updated as 2013-08-18 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_STATION, of sangis layer: WTR_STATION 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_STATION not found in SDE, not backed up
+*----------Number of layers read = 111, total elapsed time = 0:24:33
+-->Checking layer WTR_STATIONP is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_STATIONP is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_STATIONP will be updated as 2013-08-18 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_STATIONP, of sangis layer: WTR_STATIONP 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_STATIONP not found in SDE, not backed up
+*----------Number of layers read = 112, total elapsed time = 0:24:38
+-->Checking layer WTR_TANK is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_TANK is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_TANK will be updated as 2013-08-18 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_TANK, of sangis layer: WTR_TANK 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_TANK not found in SDE, not backed up
+*----------Number of layers read = 113, total elapsed time = 0:24:41
+-->Checking layer WTR_TUNNEL is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_TUNNEL is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_TUNNEL will be updated as 2013-08-18 < 2013-09-15
+*----------Number of layers read = 114, total elapsed time = 0:24:51
+-->Checking layer WTR_VALVE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_VALVE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_VALVE will be updated as 2013-08-18 < 2013-09-15
+ cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_VALVE, of sangis layer: WTR_VALVE 
+ schema comparison not run 
+****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.WATER\SDW.CITY.WTR_VALVE not found in SDE, not backed up
+*----------Number of layers read = 115, total elapsed time = 0:25:38
+-->Checking layer WTR_WEIR is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_WEIR is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_WEIR will be updated as 2013-08-18 < 2013-09-15
+*----------Number of layers read = 116, total elapsed time = 0:25:48
+-->Checking layer WTR_WELL is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer WTR_WELL is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+WTR_WELL will be updated as 2013-08-18 < 2013-09-15
+*----------Number of layers read = 117, total elapsed time = 0:25:58
+-->Checking layer ZIPCODE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer ZIPCODE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Is Updateable
+ZIPCODE will be updated as 2013-09-08 < 2013-09-15
+*----------Number of layers read = 118, total elapsed time = 0:26:43
+-->Checking layer W_HYDRANT_REMOVED_ABANDONED is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_HYDRANT_REMOVED_ABANDONED is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_HYDRANT_REMOVED_ABANDONED is new or was updated.
+****Error checking if new layer: W_HYDRANT_REMOVED_ABANDONED
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ZIPCODE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 119, total elapsed time = 0:26:43
+-->Checking layer W_METER is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_METER is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_METER is new or was updated.
+****Error checking if new layer: W_METER
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ZIPCODE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 120, total elapsed time = 0:26:43
+-->Checking layer W_OUTLET_TOWER is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_OUTLET_TOWER is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_OUTLET_TOWER is new or was updated.
+****Error checking if new layer: W_OUTLET_TOWER
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ZIPCODE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 121, total elapsed time = 0:26:44
+-->Checking layer W_PIPE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_PIPE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_PIPE is new or was updated.
+****Error checking if new layer: W_PIPE
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ZIPCODE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 122, total elapsed time = 0:26:44
+-->Checking layer W_PITOT_TAP is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_PITOT_TAP is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_PITOT_TAP is new or was updated.
+****Error checking if new layer: W_PITOT_TAP
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ZIPCODE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 123, total elapsed time = 0:26:44
+-->Checking layer W_PUMP is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_PUMP is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_PUMP is new or was updated.
+****Error checking if new layer: W_PUMP
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ZIPCODE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 124, total elapsed time = 0:26:44
+-->Checking layer W_PUMP_STATION is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_PUMP_STATION is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_PUMP_STATION is new or was updated.
+****Error checking if new layer: W_PUMP_STATION
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ZIPCODE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 125, total elapsed time = 0:26:44
+-->Checking layer W_REDUCER is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_REDUCER is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_REDUCER is new or was updated.
+****Error checking if new layer: W_REDUCER
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ZIPCODE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 126, total elapsed time = 0:26:44
+-->Checking layer W_REGULATOR_REMOVED_ABANDONED is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_REGULATOR_REMOVED_ABANDONED is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_REGULATOR_REMOVED_ABANDONED is new or was updated.
+****Error checking if new layer: W_REGULATOR_REMOVED_ABANDONED
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ZIPCODE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 127, total elapsed time = 0:26:44
+-->Checking layer W_REGULATOR_VALVE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_REGULATOR_VALVE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_REGULATOR_VALVE is new or was updated.
+****Error checking if new layer: W_REGULATOR_VALVE
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ZIPCODE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 128, total elapsed time = 0:26:44
+-->Checking layer W_SAMPLE_LOCATION is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_SAMPLE_LOCATION is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_SAMPLE_LOCATION is new or was updated.
+****Error checking if new layer: W_SAMPLE_LOCATION
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ZIPCODE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 129, total elapsed time = 0:26:45
+-->Checking layer W_SERVICE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_SERVICE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_SERVICE is new or was updated.
+****Error checking if new layer: W_SERVICE
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ZIPCODE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 130, total elapsed time = 0:26:45
+-->Checking layer W_SERVICE_REMOVED_ABANDONED is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_SERVICE_REMOVED_ABANDONED is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_SERVICE_REMOVED_ABANDONED is new or was updated.
+****Error checking if new layer: W_SERVICE_REMOVED_ABANDONED
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ZIPCODE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 131, total elapsed time = 0:26:45
+-->Checking layer W_STATION is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_STATION is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_STATION is new or was updated.
+****Error checking if new layer: W_STATION
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ZIPCODE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 132, total elapsed time = 0:26:45
+-->Checking layer W_STATIONP is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_STATIONP is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_STATIONP is new or was updated.
+****Error checking if new layer: W_STATIONP
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ZIPCODE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 133, total elapsed time = 0:26:45
+-->Checking layer W_TANK is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_TANK is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_TANK is new or was updated.
+****Error checking if new layer: W_TANK
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ZIPCODE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 134, total elapsed time = 0:26:45
+-->Checking layer W_TUNNEL is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_TUNNEL is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_TUNNEL is new or was updated.
+****Error checking if new layer: W_TUNNEL
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ZIPCODE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 135, total elapsed time = 0:26:45
+-->Checking layer W_VALVE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_VALVE is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_VALVE is new or was updated.
+****Error checking if new layer: W_VALVE
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ZIPCODE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 136, total elapsed time = 0:26:45
+-->Checking layer W_VALVE_REMOVED_ABANDONED is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_VALVE_REMOVED_ABANDONED is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_VALVE_REMOVED_ABANDONED is new or was updated.
+****Error checking if new layer: W_VALVE_REMOVED_ABANDONED
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ZIPCODE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 137, total elapsed time = 0:26:46
+-->Checking layer W_WEIR is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer W_WEIR is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if W_WEIR is new or was updated.
+****Error checking if new layer: W_WEIR
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ZIPCODE, did not download from sangis. Might be older ot schema chack failed
+*----------Number of layers read = 138, total elapsed time = 0:26:46
+-->Checking layer LANDBASE_HISTORICAL is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer LANDBASE_HISTORICAL is new in Src table D:\DATA\IN\\SANGIS\\manifest.gdb\DPI
+Unable to check if LANDBASE_HISTORICAL is new or was updated.
+****Error checking if new layer: LANDBASE_HISTORICAL
+Download failed for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ZIPCODE, did not download from sangis. Might be older ot schema chack failed

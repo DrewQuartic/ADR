@@ -40,3 +40,238 @@
 [2013-08-16 11:13:44.747000]- FINISH----------Total elapsed time = 0:01:01
 
 ==============START: GDBZipAndShip.py script start time: 2013-09-18 17:00:27.951000
+
+==============START: GDBZipAndShip.py script start time: 2013-09-25 16:48:26.576000
+[2013-09-25 16:48:38.662000]- Deleted old files
+[2013-09-25 16:49:50.472000]- Successfully ran query: days_since_create <= 10 AND replicate_sangis = 'Y'
+[2013-09-25 16:52:51.063000]- creating manifest: D:\Data\OUTLAYERS_UPDATE_TABLE.gdb
+Failed to execute. Parameters are not valid.
+ERROR 000732: Table Location: Dataset D:\Data\OUTLAYERS_UPDATE_TABLE.gdb does not exist or is not supported
+Failed to execute (CreateTable).
+
+==============START: GDBZipAndShip.py script start time: 2013-09-25 16:57:49.520000
+[2013-09-25 16:57:53.386000]- Deleted old files
+[2013-09-25 16:58:10.867000]- Successfully ran query: days_since_create <= 10 AND replicate_sangis = 'Y'
+No layers to send.
+[2013-09-25 16:58:27.061000]- creating manifest: D:\Data\OUTLAYERS_UPDATE_TABLE.gdb
+Failed to execute. Parameters are not valid.
+ERROR 000732: Table Location: Dataset D:\Data\OUTLAYERS_UPDATE_TABLE.gdb does not exist or is not supported
+Failed to execute (CreateTable).
+
+==============START: GDBZipAndShip.py script start time: 2013-09-25 17:01:29.972000
+[2013-09-25 17:01:33.087000]- Deleted old files
+[2013-09-25 17:01:47.933000]- Successfully ran query: days_since_create <= 10 AND replicate_sangis = 'Y'
+No layers to send.
+[2013-09-25 17:01:58.622000]- FINISH----------Total elapsed time = 0:00:28
+
+==============START: GDBZipAndShip.py script start time: 2013-09-25 17:02:40.973000
+[2013-09-25 17:02:43.832000]- Deleted old files
+[2013-09-25 17:02:55.783000]- Successfully ran query: days_since_create <= 15 AND replicate_sangis = 'Y'
+No layers to send.
+[2013-09-25 17:03:13.138000]- FINISH----------Total elapsed time = 0:00:32
+
+==============START: GDBZipAndShip.py script start time: 2013-09-25 17:03:59.512000
+[2013-09-25 17:04:02.001000]- Deleted old files
+[2013-09-25 17:04:11.933000]- Successfully ran query: days_since_create <= 21 AND replicate_sangis = 'Y'
+[2013-09-25 17:04:32.852000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STREET\SDW.CITY.STREET_ALLEY_WALKWAY
+[2013-09-25 17:04:33.314000]- writing: D:\Data\OUTSTREET_ALLEY_WALKWAY.gdb
+Failed to execute. Parameters are not valid.
+ERROR 000732: Output Location: Dataset D:\Data\OUTSTREET_ALLEY_WALKWAY.gdb does not exist or is not supported
+Failed to execute (FeatureClassToFeatureClass).
+
+==============START: GDBZipAndShip.py script start time: 2013-09-25 17:05:31.764000
+[2013-09-25 17:05:36.488000]- Deleted old files
+[2013-09-25 17:05:46.568000]- Successfully ran query: days_since_create <= 21 AND replicate_sangis = 'Y'
+[2013-09-25 17:06:02.506000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STREET\SDW.CITY.STREET_ALLEY_WALKWAY
+[2013-09-25 17:06:15.017000]- writing: D:\Data\OUTSTREET_ALLEY_WALKWAY.gdb
+Failed to execute. Parameters are not valid.
+ERROR 000732: Output Location: Dataset D:\Data\OUTSTREET_ALLEY_WALKWAY.gdb does not exist or is not supported
+Failed to execute (FeatureClassToFeatureClass).
+
+==============START: GDBZipAndShip.py script start time: 2013-09-25 17:08:32.974000
+[2013-09-25 17:08:40.496000]- Deleted old files
+[2013-09-25 17:08:50.778000]- Successfully ran query: days_since_create <= 21 AND replicate_sangis = 'Y'
+[2013-09-25 17:08:59.390000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STREET\SDW.CITY.STREET_ALLEY_WALKWAY
+[2013-09-25 17:09:03.001000]- writing: D:\Data\OUTSTREET_ALLEY_WALKWAY.gdb
+[2013-09-25 17:09:32.354000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STORM_WATER\SDW.CITY.DRAIN_BMP
+[2013-09-25 17:09:32.634000]- writing: D:\Data\OUTDRAIN_BMP.gdb
+[2013-09-25 17:09:42.755000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STORM_WATER\SDW.CITY.DRAIN_PUMP_STATION
+[2013-09-25 17:09:43.054000]- writing: D:\Data\OUTDRAIN_PUMP_STATION.gdb
+[2013-09-25 17:10:32.751000]- creating manifest: D:\Data\OUTLAYERS_UPDATE_TABLE.gdb
+Failed to execute. Parameters are not valid.
+ERROR 000732: Table Location: Dataset D:\Data\OUTLAYERS_UPDATE_TABLE.gdb does not exist or is not supported
+Failed to execute (CreateTable).
+
+==============START: GDBZipAndShip.py script start time: 2013-09-25 17:11:55.239000
+[2013-09-25 17:11:57.606000]- Deleted old files
+[2013-09-25 17:12:00.237000]- Successfully ran query: days_since_create <= 21 AND replicate_sangis = 'Y'
+[2013-09-25 17:12:03.886000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STREET\SDW.CITY.STREET_ALLEY_WALKWAY
+[2013-09-25 17:12:04.326000]- writing: D:\Data\OUTSTREET_ALLEY_WALKWAY.gdb
+[2013-09-25 17:12:15.459000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STORM_WATER\SDW.CITY.DRAIN_BMP
+[2013-09-25 17:12:15.735000]- writing: D:\Data\OUTDRAIN_BMP.gdb
+[2013-09-25 17:12:18.693000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STORM_WATER\SDW.CITY.DRAIN_PUMP_STATION
+[2013-09-25 17:12:18.984000]- writing: D:\Data\OUTDRAIN_PUMP_STATION.gdb
+[2013-09-25 17:13:20.143000]- creating manifest: D:\Data\OUTLAYERS_UPDATE_TABLE.gdb
+[2013-09-25 17:13:21.243000]- Error trying to write to zip file LAYERS_UPDATE_TABLE.gdb\
+[2013-09-25 17:13:21.243000]- ERROR:[Errno 13] Permission denied: 'D:\\Data\\OUT\\LAYERS_UPDATE_TABLE.gdb\\LAYERS_UPDATE_TABLE.GISAPPSERVERDEV.24372.11688.sr.lock'
+[2013-09-25 17:13:21.247000]- Error trying to write to zip file LAYERS_UPDATE_TABLE.gdb\
+[2013-09-25 17:13:21.247000]- ERROR:[Errno 13] Permission denied: 'D:\\Data\\OUT\\LAYERS_UPDATE_TABLE.gdb\\LAYERS_UPDATE_TABLE.wr.lock'
+[2013-09-25 17:13:21.250000]- Error trying to write to zip file LAYERS_UPDATE_TABLE.gdb\
+[2013-09-25 17:13:21.250000]- ERROR:[Errno 13] Permission denied: 'D:\\Data\\OUT\\LAYERS_UPDATE_TABLE.gdb\\_gdb.GISAPPSERVERDEV.24372.11688.sr.lock'
+[2013-09-25 17:13:21.910000]- sending D:\Data\OUTDRAIN_BMP.zip via ftp!
+[2013-09-25 17:13:22.190000]- sending D:\Data\OUTDRAIN_PUMP_STATION.zip via ftp!
+[2013-09-25 17:13:22.471000]- sending D:\Data\OUTLAYERS_UPDATE_TABLE.zip via ftp!
+[2013-09-25 17:13:23.409000]- sending D:\Data\OUTSTREET_ALLEY_WALKWAY.zip via ftp!
+[2013-09-25 17:13:23.736000]- FINISH----------Total elapsed time = 0:01:28
+
+==============START: GDBZipAndShip.py script start time: 2013-09-25 17:14:49.738000
+[2013-09-25 17:14:53.689000]- Deleted old files
+[2013-09-25 17:14:56.207000]- Successfully ran query: days_since_create <= 21 AND replicate_sangis = 'Y'
+[2013-09-25 17:15:01.439000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STREET\SDW.CITY.STREET_ALLEY_WALKWAY
+[2013-09-25 17:15:01.902000]- writing: D:\Data\OUTSTREET_ALLEY_WALKWAY.gdb
+[2013-09-25 17:15:11.633000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STORM_WATER\SDW.CITY.DRAIN_BMP
+[2013-09-25 17:15:11.930000]- writing: D:\Data\OUTDRAIN_BMP.gdb
+[2013-09-25 17:15:15.621000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STORM_WATER\SDW.CITY.DRAIN_PUMP_STATION
+[2013-09-25 17:15:15.898000]- writing: D:\Data\OUTDRAIN_PUMP_STATION.gdb
+[2013-09-25 17:15:22.024000]- creating manifest: D:\Data\OUTLAYERS_UPDATE_TABLE.gdb
+
+==============START: GDBZipAndShip.py script start time: 2013-09-25 17:16:03.050000
+[2013-09-25 17:16:07.460000]- Deleted old files
+[2013-09-25 17:16:09.977000]- Successfully ran query: days_since_create <= 21 AND replicate_sangis = 'Y'
+[2013-09-25 17:16:12.974000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STREET\SDW.CITY.STREET_ALLEY_WALKWAY
+[2013-09-25 17:16:13.400000]- writing: D:\Data\OUTSTREET_ALLEY_WALKWAY.gdb
+[2013-09-25 17:16:22.557000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STORM_WATER\SDW.CITY.DRAIN_BMP
+[2013-09-25 17:16:22.824000]- writing: D:\Data\OUTDRAIN_BMP.gdb
+[2013-09-25 17:16:25.582000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STORM_WATER\SDW.CITY.DRAIN_PUMP_STATION
+[2013-09-25 17:16:25.852000]- writing: D:\Data\OUTDRAIN_PUMP_STATION.gdb
+[2013-09-25 17:16:29.896000]- creating manifest: D:\Data\OUTLAYERS_UPDATE_TABLE.gdb
+[2013-09-25 17:16:42.753000]- Error trying to write to zip file LAYERS_UPDATE_TABLE.gdb\
+[2013-09-25 17:16:42.754000]- ERROR:[Errno 13] Permission denied: 'D:\\Data\\OUT\\LAYERS_UPDATE_TABLE.gdb\\LAYERS_UPDATE_TABLE.GISAPPSERVERDEV.24456.21952.sr.lock'
+[2013-09-25 17:16:42.757000]- Error trying to write to zip file LAYERS_UPDATE_TABLE.gdb\
+[2013-09-25 17:16:42.757000]- ERROR:[Errno 13] Permission denied: 'D:\\Data\\OUT\\LAYERS_UPDATE_TABLE.gdb\\LAYERS_UPDATE_TABLE.wr.lock'
+[2013-09-25 17:16:42.760000]- Error trying to write to zip file LAYERS_UPDATE_TABLE.gdb\
+[2013-09-25 17:16:42.760000]- ERROR:[Errno 13] Permission denied: 'D:\\Data\\OUT\\LAYERS_UPDATE_TABLE.gdb\\_gdb.GISAPPSERVERDEV.24456.21952.sr.lock'
+[2013-09-25 17:17:09.003000]- sending D:\Data\OUTDRAIN_BMP.zip via ftp!
+[2013-09-25 17:17:09.285000]- sending D:\Data\OUTDRAIN_PUMP_STATION.zip via ftp!
+[2013-09-25 17:17:09.561000]- sending D:\Data\OUTLAYERS_UPDATE_TABLE.zip via ftp!
+[2013-09-25 17:17:10.499000]- sending D:\Data\OUTSTREET_ALLEY_WALKWAY.zip via ftp!
+[2013-09-25 17:17:10.823000]- FINISH----------Total elapsed time = 0:01:07
+
+==============START: GDBZipAndShip.py script start time: 2013-09-25 17:17:37.440000
+[2013-09-25 17:17:38.984000]- Deleted old files
+[2013-09-25 17:17:43]- Successfully ran query: days_since_create <= 21 AND replicate_sangis = 'Y'
+[2013-09-25 17:17:47.757000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STREET\SDW.CITY.STREET_ALLEY_WALKWAY
+[2013-09-25 17:17:48.202000]- writing: D:\Data\OUTSTREET_ALLEY_WALKWAY.gdb
+[2013-09-25 17:17:58.653000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STORM_WATER\SDW.CITY.DRAIN_BMP
+[2013-09-25 17:17:58.996000]- writing: D:\Data\OUTDRAIN_BMP.gdb
+[2013-09-25 17:18:03.592000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STORM_WATER\SDW.CITY.DRAIN_PUMP_STATION
+[2013-09-25 17:18:03.872000]- writing: D:\Data\OUTDRAIN_PUMP_STATION.gdb
+[2013-09-25 17:18:12.836000]- creating manifest: D:\Data\OUTLAYERS_UPDATE_TABLE.gdb
+[2013-09-25 17:18:38.538000]- Error trying to write to zip file LAYERS_UPDATE_TABLE.gdb\
+[2013-09-25 17:18:38.538000]- ERROR:[Errno 13] Permission denied: 'D:\\Data\\OUT\\LAYERS_UPDATE_TABLE.gdb\\LAYERS_UPDATE_TABLE.GISAPPSERVERDEV.23916.20668.sr.lock'
+[2013-09-25 17:18:38.542000]- Error trying to write to zip file LAYERS_UPDATE_TABLE.gdb\
+[2013-09-25 17:18:38.542000]- ERROR:[Errno 13] Permission denied: 'D:\\Data\\OUT\\LAYERS_UPDATE_TABLE.gdb\\LAYERS_UPDATE_TABLE.wr.lock'
+[2013-09-25 17:18:38.545000]- Error trying to write to zip file LAYERS_UPDATE_TABLE.gdb\
+[2013-09-25 17:18:38.545000]- ERROR:[Errno 13] Permission denied: 'D:\\Data\\OUT\\LAYERS_UPDATE_TABLE.gdb\\_gdb.GISAPPSERVERDEV.23916.20668.sr.lock'
+
+==============START: GDBZipAndShip.py script start time: 2013-09-25 17:18:55.877000
+[2013-09-25 17:19:01.109000]- Deleted old files
+[2013-09-25 17:19:03.728000]- Successfully ran query: days_since_create <= 21 AND replicate_sangis = 'Y'
+[2013-09-25 17:19:06.033000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STREET\SDW.CITY.STREET_ALLEY_WALKWAY
+[2013-09-25 17:19:06.458000]- writing: D:\Data\OUTSTREET_ALLEY_WALKWAY.gdb
+[2013-09-25 17:19:16.111000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STORM_WATER\SDW.CITY.DRAIN_BMP
+[2013-09-25 17:19:16.388000]- writing: D:\Data\OUTDRAIN_BMP.gdb
+[2013-09-25 17:19:19.683000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STORM_WATER\SDW.CITY.DRAIN_PUMP_STATION
+[2013-09-25 17:19:19.949000]- writing: D:\Data\OUTDRAIN_PUMP_STATION.gdb
+[2013-09-25 17:19:24.299000]- creating manifest: D:\Data\OUTLAYERS_UPDATE_TABLE.gdb
+[2013-09-25 17:21:43.190000]- Error trying to write to zip file LAYERS_UPDATE_TABLE.gdb\
+[2013-09-25 17:21:43.191000]- ERROR:[Errno 13] Permission denied: 'D:\\Data\\OUT\\LAYERS_UPDATE_TABLE.gdb\\LAYERS_UPDATE_TABLE.GISAPPSERVERDEV.24564.18204.sr.lock'
+[2013-09-25 17:21:43.195000]- Error trying to write to zip file LAYERS_UPDATE_TABLE.gdb\
+[2013-09-25 17:21:43.195000]- ERROR:[Errno 13] Permission denied: 'D:\\Data\\OUT\\LAYERS_UPDATE_TABLE.gdb\\LAYERS_UPDATE_TABLE.wr.lock'
+[2013-09-25 17:21:43.199000]- Error trying to write to zip file LAYERS_UPDATE_TABLE.gdb\
+[2013-09-25 17:21:43.199000]- ERROR:[Errno 13] Permission denied: 'D:\\Data\\OUT\\LAYERS_UPDATE_TABLE.gdb\\_gdb.GISAPPSERVERDEV.24564.18204.sr.lock'
+
+==============START: GDBZipAndShip.py script start time: 2013-09-25 22:10:44.271000
+[2013-09-25 22:11:32.581000]- Deleted old files
+[2013-09-25 22:11:35.207000]- Successfully ran query: days_since_create <= 21 AND replicate_sangis = 'Y'
+[2013-09-25 22:11:40.311000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STREET\SDW.CITY.STREET_ALLEY_WALKWAY
+[2013-09-25 22:11:40.779000]- writing: D:\Data\OUTSTREET_ALLEY_WALKWAY.gdb
+[2013-09-25 22:11:50.992000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STORM_WATER\SDW.CITY.DRAIN_BMP
+[2013-09-25 22:11:51.310000]- writing: D:\Data\OUTDRAIN_BMP.gdb
+[2013-09-25 22:11:58.473000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STORM_WATER\SDW.CITY.DRAIN_PUMP_STATION
+[2013-09-25 22:11:58.786000]- writing: D:\Data\OUTDRAIN_PUMP_STATION.gdb
+[2013-09-25 22:12:26.158000]- creating manifest: D:\Data\OUTLAYERS_UPDATE_TABLE.gdb
+[2013-09-25 22:13:26.278000]- Error trying to write to zip file LAYERS_UPDATE_TABLE.gdb\
+[2013-09-25 22:13:26.279000]- ERROR:[Errno 13] Permission denied: 'D:\\Data\\OUT\\LAYERS_UPDATE_TABLE.gdb\\LAYERS_UPDATE_TABLE.GISAPPSERVERDEV.24176.22204.sr.lock'
+[2013-09-25 22:13:26.283000]- Error trying to write to zip file LAYERS_UPDATE_TABLE.gdb\
+[2013-09-25 22:13:26.283000]- ERROR:[Errno 13] Permission denied: 'D:\\Data\\OUT\\LAYERS_UPDATE_TABLE.gdb\\_gdb.GISAPPSERVERDEV.24176.22204.sr.lock'
+
+==============START: GDBZipAndShip.py script start time: 2013-09-25 22:16:51.045000
+[2013-09-25 22:16:52.586000]- Deleted old files
+[2013-09-25 22:16:55.101000]- Successfully ran query: days_since_create <= 21 AND replicate_sangis = 'Y'
+[2013-09-25 22:17:37.239000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STREET\SDW.CITY.STREET_ALLEY_WALKWAY
+[2013-09-25 22:17:42.809000]- writing: D:\Data\OUTSTREET_ALLEY_WALKWAY.gdb
+
+==============START: GDBZipAndShip.py script start time: 2013-09-25 22:19:02.351000
+[2013-09-25 22:19:04.426000]- Deleted old files
+[2013-09-25 22:19:06.915000]- Successfully ran query: days_since_create <= 21 AND replicate_sangis = 'Y'
+[2013-09-25 22:19:12.565000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STREET\SDW.CITY.STREET_ALLEY_WALKWAY
+[2013-09-25 22:19:13.030000]- writing: D:\Data\OUTSTREET_ALLEY_WALKWAY.gdb
+
+==============START: GDBZipAndShip.py script start time: 2013-09-25 22:21:02.759000
+[2013-09-25 22:21:04.439000]- Deleted old files
+[2013-09-25 22:21:06.953000]- Successfully ran query: days_since_create <= 21 AND replicate_sangis = 'Y'
+[2013-09-25 22:21:10.726000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STREET\SDW.CITY.STREET_ALLEY_WALKWAY
+[2013-09-25 22:21:11.170000]- writing: D:\Data\OUTSTREET_ALLEY_WALKWAY.gdb
+[2013-09-25 22:21:26.289000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STORM_WATER\SDW.CITY.DRAIN_BMP
+[2013-09-25 22:21:26.573000]- writing: D:\Data\OUTDRAIN_BMP.gdb
+[2013-09-25 22:21:38.504000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STORM_WATER\SDW.CITY.DRAIN_PUMP_STATION
+[2013-09-25 22:21:38.883000]- writing: D:\Data\OUTDRAIN_PUMP_STATION.gdb
+[2013-09-25 22:21:44.719000]- creating manifest: D:\Data\OUTLAYERS_UPDATE_TABLE.gdb
+[2013-09-25 22:21:59.980000]- Error trying to write to zip file LAYERS_UPDATE_TABLE.gdb\
+[2013-09-25 22:21:59.980000]- ERROR:[Errno 13] Permission denied: 'D:\\Data\\OUT\\LAYERS_UPDATE_TABLE.gdb\\LAYERS_UPDATE_TABLE.GISAPPSERVERDEV.25540.23296.sr.lock'
+[2013-09-25 22:21:59.984000]- Error trying to write to zip file LAYERS_UPDATE_TABLE.gdb\
+[2013-09-25 22:21:59.984000]- ERROR:[Errno 13] Permission denied: 'D:\\Data\\OUT\\LAYERS_UPDATE_TABLE.gdb\\_gdb.GISAPPSERVERDEV.25540.23296.sr.lock'
+[2013-09-25 22:22:35.255000]- sending D:\Data\OUTDRAIN_BMP.zip via ftp!
+[2013-09-25 22:22:44.420000]- sending D:\Data\OUTDRAIN_PUMP_STATION.zip via ftp!
+[2013-09-25 22:23:17.717000]- sending D:\Data\OUTLAYERS_UPDATE_TABLE.zip via ftp!
+[2013-09-25 22:23:18.653000]- sending D:\Data\OUTSTREET_ALLEY_WALKWAY.zip via ftp!
+local variable 'row' referenced before assignment
+==============START: GDBZipAndShip.py script start time: 2013-09-25 22:26:52.859000
+[2013-09-25 22:26:56.099000]- Deleted old files
+[2013-09-25 22:26:58.603000]- Successfully ran query: days_since_create <= 21 AND replicate_sangis = 'Y'
+[2013-09-25 22:27:01.009000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STREET\SDW.CITY.STREET_ALLEY_WALKWAY
+[2013-09-25 22:27:01.514000]- writing: D:\Data\OUTSTREET_ALLEY_WALKWAY.gdb
+[2013-09-25 22:27:10.849000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STORM_WATER\SDW.CITY.DRAIN_BMP
+[2013-09-25 22:27:11.130000]- writing: D:\Data\OUTDRAIN_BMP.gdb
+[2013-09-25 22:27:14.656000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STORM_WATER\SDW.CITY.DRAIN_PUMP_STATION
+[2013-09-25 22:27:14.933000]- writing: D:\Data\OUTDRAIN_PUMP_STATION.gdb
+[2013-09-25 22:27:20.003000]- creating manifest: D:\Data\OUTLAYERS_UPDATE_TABLE.gdb
+[2013-09-25 22:27:23.213000]- Error trying to write to zip file LAYERS_UPDATE_TABLE.gdb\
+[2013-09-25 22:27:23.213000]- ERROR:[Errno 13] Permission denied: 'D:\\Data\\OUT\\LAYERS_UPDATE_TABLE.gdb\\LAYERS_UPDATE_TABLE.GISAPPSERVERDEV.25432.18688.sr.lock'
+[2013-09-25 22:27:23.218000]- Error trying to write to zip file LAYERS_UPDATE_TABLE.gdb\
+[2013-09-25 22:27:23.218000]- ERROR:[Errno 13] Permission denied: 'D:\\Data\\OUT\\LAYERS_UPDATE_TABLE.gdb\\_gdb.GISAPPSERVERDEV.25432.18688.sr.lock'
+[2013-09-25 22:27:25.436000]- sending D:\Data\OUTDRAIN_BMP.zip via ftp!
+[2013-09-25 22:27:25.720000]- sending D:\Data\OUTDRAIN_PUMP_STATION.zip via ftp!
+[2013-09-25 22:27:25.997000]- sending D:\Data\OUTLAYERS_UPDATE_TABLE.zip via ftp!
+[2013-09-25 22:27:26.931000]- sending D:\Data\OUTSTREET_ALLEY_WALKWAY.zip via ftp!
+local variable 'row' referenced before assignment
+==============START: GDBZipAndShip.py script start time: 2013-09-25 22:28:12.951000
+[2013-09-25 22:28:20.355000]- Deleted old files
+[2013-09-25 22:28:22.860000]- Successfully ran query: days_since_create <= 21 AND replicate_sangis = 'Y'
+[2013-09-25 22:28:25.762000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STREET\SDW.CITY.STREET_ALLEY_WALKWAY
+[2013-09-25 22:28:26.216000]- writing: D:\Data\OUTSTREET_ALLEY_WALKWAY.gdb
+[2013-09-25 22:28:35.840000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STORM_WATER\SDW.CITY.DRAIN_BMP
+[2013-09-25 22:28:36.130000]- writing: D:\Data\OUTDRAIN_BMP.gdb
+[2013-09-25 22:28:39.045000]- found a layer: D:\BATCH_FILES\ADR\city@atlasdev.sde\SDW.CITY.STORM_WATER\SDW.CITY.DRAIN_PUMP_STATION
+[2013-09-25 22:28:39.329000]- writing: D:\Data\OUTDRAIN_PUMP_STATION.gdb
+[2013-09-25 22:28:42.868000]- creating manifest: D:\Data\OUTLAYERS_UPDATE_TABLE.gdb
+[2013-09-25 22:28:45.391000]- Error trying to write to zip file LAYERS_UPDATE_TABLE.gdb\
+[2013-09-25 22:28:45.391000]- ERROR:[Errno 13] Permission denied: 'D:\\Data\\OUT\\LAYERS_UPDATE_TABLE.gdb\\LAYERS_UPDATE_TABLE.GISAPPSERVERDEV.16552.24636.sr.lock'
+[2013-09-25 22:28:45.400000]- Error trying to write to zip file LAYERS_UPDATE_TABLE.gdb\
+[2013-09-25 22:28:45.400000]- ERROR:[Errno 13] Permission denied: 'D:\\Data\\OUT\\LAYERS_UPDATE_TABLE.gdb\\_gdb.GISAPPSERVERDEV.16552.24636.sr.lock'
+[2013-09-25 22:28:48.659000]- sending D:\Data\OUTDRAIN_BMP.zip via ftp!
+[2013-09-25 22:28:48.940000]- sending D:\Data\OUTDRAIN_PUMP_STATION.zip via ftp!
+[2013-09-25 22:28:49.217000]- sending D:\Data\OUTLAYERS_UPDATE_TABLE.zip via ftp!
+[2013-09-25 22:28:50.149000]- sending D:\Data\OUTSTREET_ALLEY_WALKWAY.zip via ftp!
+[2013-09-25 22:28:50.471000]- FINISH----------Total elapsed time = 0:00:37
