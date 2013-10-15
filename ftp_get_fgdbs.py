@@ -70,10 +70,10 @@ def main(inLogger = None, inManifest = None):
         logger.info("-----------------Beginning FTP Job---------------")
 
         #Open Connection
-        print ftp_host
-        print ftp_usr
-        print ftp_pwd
-        print ftp_path
+        #print ftp_host
+        #print ftp_usr
+        #print ftp_pwd
+        #print ftp_path
 
         try:
             ftp = FTP(ftp_host)
@@ -96,10 +96,10 @@ def main(inLogger = None, inManifest = None):
         filepath = outfolder + '\\' + filename
         outfilepath = outfolder + '\\' + basename + '.gdb'
 
-        print "filename: " + filename
-        print "outfolder: " + outfolder
-        print "filepath: " + filepath
-        print "outfilepath: " + outfilepath
+        #print "filename: " + filename
+        #print "outfolder: " + outfolder
+        #print "filepath: " + filepath
+        #print "outfilepath: " + outfilepath
 
         if os.path.exists(outfolder):
             print "outfolder exists: " + outfolder
@@ -107,14 +107,14 @@ def main(inLogger = None, inManifest = None):
                 #print ftp.nlst()
                 if filename in ftp.nlst():
                     # Open the file for writing in binary mode
-                    print 'Opening local file ' + filepath
+                    #print 'Opening local file ' + filepath
                     f = open(filepath, 'wb')
 
                     ftp.retrbinary('RETR ' + filename, f.write)
                     f.close()
                     del f
                 else:
-                    print "File %s not found on FTP host" % filename
+                    #print "File %s not found on FTP host" % filename
                     logger.info("File %s not found on FTP host" % filename)
 
                     return None

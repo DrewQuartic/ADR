@@ -323,7 +323,7 @@ def main(argv=None):
                         # Find dataset if exists
                         if dataType == "FEATURECLASS" or dataType == "ANNOTATION":
                             layerInfo = getDataset(fc)
-                            dataset = layerInfo[0]
+                            dataset = layerInfo[0] + '_old'
                             fc = dataset + "\\" + schema + aliasCheck[1]
                             aliasName = dataset + "\\" + aliasName
                         else:
