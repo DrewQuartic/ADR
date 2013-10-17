@@ -1,4 +1,4 @@
 
-LANDBASE_HISTORICAL is a new layer
-Added new record LANDBASE_HISTORICAL to D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE table
-Schema check failed  or not run for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LANDBASE_HISTORICAL, forcing load based on configuration
+Schema check succeeded for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.TBL_ROAD_NAME
+Schema check succeeded for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.ROADSEG_ALIAS
+Schema check succeeded for D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ROADS_INTERSECTION

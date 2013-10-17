@@ -194,29 +194,34 @@ def checkIsNewLayer(fc,updateTableSrc):
                                     isUpdateable = False
                         if (isUpdateable):
                             logFile.write ("\n" + "Is Updateable")
-                            dp = r1[1]
-                            dpStr = str(dp)
-                            dpLst = dpStr.split(' ')
-                            dpDate = dpLst[0]
-                            dpLst = dpDate.split('-')
-                            d1 = datetime.date(int(dpLst[0]),int(dpLst[1]),int(dpLst[2]))
-                            dp = r2[0]
-                            dpStr = str(dp)
-                            dpLst = dpStr.split(' ')
-                            dpDate = dpLst[0]
-                            dpLst = dpDate.split('-')
-                            d2 = datetime.date(int(dpLst[0]),int(dpLst[1]),int(dpLst[2]))
-                            if d1 < d2:
-                                isNew = True
-                                logFile.write ("\n" + "%s will be updated as %s < %s" % (fc,d1, d2))
+                            if r1[1]:
+                                dp = r1[1]
+                                dpStr = str(dp)
+                                dpLst = dpStr.split(' ')
+                                dpDate = dpLst[0]
+                                dpLst = dpDate.split('-')
+                                d1 = datetime.date(int(dpLst[0]),int(dpLst[1]),int(dpLst[2]))
+                                dp = r2[0]
+                                dpStr = str(dp)
+                                dpLst = dpStr.split(' ')
+                                dpDate = dpLst[0]
+                                dpLst = dpDate.split('-')
+                                d2 = datetime.date(int(dpLst[0]),int(dpLst[1]),int(dpLst[2]))
+                                if d1 < d2:
+                                    isNew = True
+                                    logFile.write ("\n" + "%s will be updated as %s < %s" % (fc,d1, d2))
+                                else:
+                                    logFile.write ("\n" + "%s will not been updated as %s >= %s" % (fc,d1, d2))
+                                    print "NOTE: " + "%s has not been updated %s >= %s" % (fc,d1, d2)
                             else:
-                                logFile.write ("\n" + "%s will not been updated as %s >= %s" % (fc,d1, d2))
-                                print "NOTE: " + "%s has not been updated %s >= %s" % (fc,d1, d2)
+                                isNew = True
+                                logFile.write ("\n" + "{0} will be updated as it does not have a previous valid update date".format(fc))
                         else:
                             logFile.write ("\n" + "[0] is [1] responsibility, and will not be updated".format(fc, dept))
 
         if theCount == 0: # Layer does not exist in the local table
             # Get the table DPI records for the new FC and use it to update the
+            logFile.write ("%s is does not exist in CITY.Layer_Updat_ table. Attemting to add." % fc)
             with arcpy.da.SearchCursor(updateTableSrc, ["UPDATE_DATE", "DATA_TYPE", "LAYER_NAME"], "\"LAYER_NAME\" = '" + str(fc) + "'") as c2:
                 for r2 in c2:
                     if importNewLayers:
@@ -234,11 +239,9 @@ def checkIsNewLayer(fc,updateTableSrc):
                         logFile.write ("\n" + "Added new record {0} to {1} table".format(layerName, updateTableSDE))
                         layerlogFile.write ("\n" + "Added new record {0} to {1} table".format(layerName, updateTableSDE))
                         #del c3
-                        emailsender.main("load_notify@sddpc.org","x","Load Process added layer entries","The load process found a layer from SanGIS. {0}, that is not in the SDE.Layers_Update_Table".format(layerName),"False")
+                        emailsender.main("load_notify@sddpc.org","x","Load Process added layer entries","The load process found a layer from SanGIS. {0}, that is not in the SDE.Layers_Update_Table. This might require your attention before the deploy process launches".format(layerName),"False")
                     else:
                         logFile.write ("\n" + "%s is a new layer, but new layers are excluded per configuration setting" % fc)
-        else:
-            logFile.write ("%s is does not exist in source manifest table. Cannot load." % fc)
 
         if isNew:
             try:
@@ -306,7 +309,8 @@ def main():
             endTime = datetime.datetime.today()
             minschk, secs = divmod((endTime - startTime).seconds, 60)
             hours, mins = divmod(minschk, 60)
-            logFile.write ("\n" + "*----------Number of layers read = %d, total elapsed time = %d:%02d:%02d" % (layerCount, hours, mins, secs))
+            logFile.write ("\n" + "*Number of layers read = %d, total elapsed time = %d:%02d:%02d" % (layerCount, hours, mins, secs))
+            logFile.write("\n ****************Begining processing on {0}.*************".format(fc))
             logFile.flush()
             try:
                 doLoad, dataType, localDataset, cityFCName = checkIsNewLayer(fc,updateTableSrc)
@@ -377,17 +381,41 @@ def main():
                                     if desc.datasetType == "FeatureDataset":
                                         if not arcpy.Exists(Staging_BAK  + "\\" +nameparts[3].split(".")[2]):
                                             arcpy.CreateFeatureDataset_management(Staging_BAK, nameparts[3].split(".")[2], localFC)
+                                            logFile.write("\n Parent FeatureDataset does not existing in backup fgdb, creating")
+                                            logFile.write("\n" + arcpy.GetMessages())
+                                            logFile.flush()
                                         #arcpy.CopyFeatures_management(localFC, Staging_BAK + '\\' + nameparts[3].split(".")[2]  + '\\' + cityFCName)
                                         arcpy.Copy_management(localFC, Staging_BAK + '\\' + nameparts[3].split(".")[2]  + '\\' + cityFCName)
+                                        logFile.write("\n" + arcpy.GetMessages())
+                                        logFile.flush()
                                     else:
                                         #arcpy.CopyFeatures_management(localFC, Staging_BAK + '\\' + cityFCName)
                                         arcpy.Copy_management(localFC, Staging_BAK + '\\' + cityFCName)
+                                        logFile.write("\n" + arcpy.GetMessages())
+                                        logFile.flush()
                                     mydeploylist.write (fGDB + '\\' + fc  + "\n")
                                     mydeploylist.flush()
                                 elif dataType == TABLE:
                                     if arcpy.Exists(Staging_BAK + '\\' + fc):
                                         arcpy.Delete_management(Staging_BAK + '\\' + fc)
                                     arcpy.CopyRows_management(localFC, Staging_BAK + '\\' + fc)
+                                    logFile.write("\n" + arcpy.GetMessages())
+                                    logFile.flush()
+                                    mydeploylist.write (fGDB + '\\' + fc  + "\n")
+                                    mydeploylist.flush()
+                                elif dataType == "FEATUREDATASET":
+                                    if arcpy.Exists(Staging_BAK + '\\' + fc):
+                                        rc_list = [c.name for c in arcpy.Describe(Staging_BAK + '\\' + fc).children if c.datatype == "RelationshipClass"]
+                                        for rc in rc_list:
+                                            rc_path = Staging_BAK + "\\" + rc
+                                            des_rc = arcpy.Describe(rc_path)
+                                            destination = des_rc.destinationClassNames
+                                            for item in destination:
+                                                arcpy.Delete_management(Staging_BAK  + "\\" +  item)
+                                        arcpy.Delete_management(Staging_BAK + '\\' + fc)
+                                    arcpy.Copy_management(localFC, Staging_BAK + '\\'  + cityFCName)
+                                    logFile.write("\n" + arcpy.GetMessages())
+                                    logFile.flush()
                                     mydeploylist.write (fGDB + '\\' + fc  + "\n")
                                     mydeploylist.flush()
                             except Exception, err:

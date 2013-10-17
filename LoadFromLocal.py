@@ -98,6 +98,10 @@ def main():
                                     arcpy.Delete_management(SDEGDB + "\\" + FCLoadName)
                                 arcpy.Copy_management(loaditem,SDEGDB + "\\" + FCLoadName)
                             print arcpy.GetMessages()
+                            with arcpy.da.UpdateCursor(updateTable, ["UPDATE_DATE"], where_clause=  expression) as c3:
+                                for row3 in c3:
+                                    row3[0] =datetime.datetime.today()
+                                    c3.updateRow(row3)
                             del desc
                             logFile.write ( arcpy.GetMessages() + "\n")
                             logFile.flush()
@@ -114,9 +118,13 @@ def main():
                         print arcpy.GetMessages()
                         logFile.write("failed Copy and past import of {0} due to spatial domain differences. Attempting an import".format(loaditem))
                         arcpy.FeatureClassToFeatureClass_conversion(loaditem,SDEGDB + "\\" + row[0], row[2])
+                        with arcpy.da.UpdateCursor(updateTable, ["UPDATE_DATE"], where_clause=  expression) as c3:
+                            for row3 in c3:
+                                row3[0] =datetime.datetime.today()
+                                c3.updateRow(row3)
                         logFile.write ( arcpy.GetMessages() + "\n")
                         logFile.flush()
-                        skipList = ["OBJECTID", "SHAPE", "SHAPE.Area", "SHAPE.Length", "SHAPE.STArea()","SHAPE.STLength()"]
+                        skipList = ["OBJECTID", "SHAPE", "Shape", "SHAPE.Area", "SHAPE.Length", "SHAPE.STArea()","SHAPE.STLength()"]
                         fieldList = arcpy.ListFields(SDEGDB + "\\" + row[0] + "\\" + row[2])
                         for field in fieldList:
                             if not field.name in skipList:

@@ -1,11 +1,247 @@
 
 -----------------Beginning Update Job---------------
-Started at:11:23AM on October 11, 2013
-
-*----------Number of layers read = 1, total elapsed time = 0:00:05
+Started at:09:19PM on October 15, 2013
+Begining ftp of manifest
+*Number of layers read = 1, total elapsed time = 0:00:03
+ ****************Begining processing on TBL_ROAD_NAME.*************
+-->Checking layer TBL_ROAD_NAME is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer TBL_ROAD_NAME is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+TBL_ROAD_NAME will be updated as 2013-08-08 < 2013-10-13
+Executing: CopyRows D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.TBL_ROAD_NAME D:\Data\Staging\SANGIS_BAK.gdb\TBL_ROAD_NAME #
+Start Time: Tue Oct 15 21:20:11 2013
+Succeeded at Tue Oct 15 21:20:14 2013 (Elapsed Time: 2.36 seconds)
+*Number of layers read = 2, total elapsed time = 0:00:19
+ ****************Begining processing on ROADSEG_ALIAS.*************
+-->Checking layer ROADSEG_ALIAS is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer ROADSEG_ALIAS is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+ROADSEG_ALIAS will be updated as 2013-08-08 < 2013-10-12
+Executing: CopyRows D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.ROADSEG_ALIAS D:\Data\Staging\SANGIS_BAK.gdb\ROADSEG_ALIAS #
+Start Time: Tue Oct 15 21:20:18 2013
+Succeeded at Tue Oct 15 21:20:18 2013 (Elapsed Time: 0.86 seconds)
+*Number of layers read = 3, total elapsed time = 0:00:23
+ ****************Begining processing on ROADS_TRANSITION_RAMP.*************
+-->Checking layer ROADS_TRANSITION_RAMP is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer ROADS_TRANSITION_RAMP is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+ROADS_TRANSITION_RAMP will be updated as 2013-08-08 < 2013-10-12
+Executing: Copy D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ROADS_TRANSITION_RAMP D:\Data\Staging\SANGIS_BAK.gdb\SANGIS\ROADS_TRANSITION_RAMP FeatureClass
+Start Time: Tue Oct 15 21:20:45 2013
+Succeeded at Tue Oct 15 21:20:51 2013 (Elapsed Time: 5.88 seconds)
+*Number of layers read = 4, total elapsed time = 0:00:56
+ ****************Begining processing on ROADS_MAJOR.*************
+-->Checking layer ROADS_MAJOR is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer ROADS_MAJOR is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+ROADS_MAJOR will be updated as 2013-08-08 < 2013-10-12
+Executing: Copy D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ROADS_MAJOR D:\Data\Staging\SANGIS_BAK.gdb\SANGIS\ROADS_MAJOR FeatureClass
+Start Time: Tue Oct 15 21:21:18 2013
+Succeeded at Tue Oct 15 21:21:24 2013 (Elapsed Time: 6.02 seconds)
+*Number of layers read = 5, total elapsed time = 0:01:29
+ ****************Begining processing on ROADS_INTERSECTION.*************
+-->Checking layer ROADS_INTERSECTION is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer ROADS_INTERSECTION is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+ROADS_INTERSECTION will be updated as 2013-08-08 < 2013-10-12
+Executing: Copy D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ROADS_INTERSECTION D:\Data\Staging\SANGIS_BAK.gdb\SANGIS\ROADS_INTERSECTION FeatureClass
+Start Time: Tue Oct 15 21:22:01 2013
+Succeeded at Tue Oct 15 21:22:15 2013 (Elapsed Time: 14.20 seconds)
+*Number of layers read = 6, total elapsed time = 0:02:20
+ ****************Begining processing on ROADS_HIGHWAY.*************
+-->Checking layer ROADS_HIGHWAY is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer ROADS_HIGHWAY is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+ROADS_HIGHWAY will be updated as 2013-08-08 < 2013-10-12
+Executing: Copy D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ROADS_HIGHWAY D:\Data\Staging\SANGIS_BAK.gdb\SANGIS\ROADS_HIGHWAY FeatureClass
+Start Time: Tue Oct 15 21:22:43 2013
+Succeeded at Tue Oct 15 21:22:49 2013 (Elapsed Time: 6.04 seconds)
+*Number of layers read = 7, total elapsed time = 0:02:54
+ ****************Begining processing on ROADS_FREEWAY_RAMP.*************
+-->Checking layer ROADS_FREEWAY_RAMP is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer ROADS_FREEWAY_RAMP is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+ROADS_FREEWAY_RAMP will be updated as 2013-08-08 < 2013-10-12
+Executing: Copy D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ROADS_FREEWAY_RAMP D:\Data\Staging\SANGIS_BAK.gdb\SANGIS\ROADS_FREEWAY_RAMP FeatureClass
+Start Time: Tue Oct 15 21:23:12 2013
+Succeeded at Tue Oct 15 21:23:18 2013 (Elapsed Time: 5.60 seconds)
+*Number of layers read = 8, total elapsed time = 0:03:23
+ ****************Begining processing on ROADS_FREEWAY.*************
+-->Checking layer ROADS_FREEWAY is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer ROADS_FREEWAY is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+ROADS_FREEWAY will be updated as 2013-08-08 < 2013-10-12
+Executing: Copy D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ROADS_FREEWAY D:\Data\Staging\SANGIS_BAK.gdb\SANGIS\ROADS_FREEWAY FeatureClass
+Start Time: Tue Oct 15 21:23:47 2013
+Succeeded at Tue Oct 15 21:23:54 2013 (Elapsed Time: 7.34 seconds)
+*Number of layers read = 9, total elapsed time = 0:03:59
+ ****************Begining processing on ROADS_COLLECTOR.*************
+-->Checking layer ROADS_COLLECTOR is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer ROADS_COLLECTOR is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+ROADS_COLLECTOR will be updated as 2013-08-08 < 2013-10-12
+Executing: Copy D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ROADS_COLLECTOR D:\Data\Staging\SANGIS_BAK.gdb\SANGIS\ROADS_COLLECTOR FeatureClass
+Start Time: Tue Oct 15 21:24:33 2013
+Succeeded at Tue Oct 15 21:24:43 2013 (Elapsed Time: 10.56 seconds)
+*Number of layers read = 10, total elapsed time = 0:04:48
+ ****************Begining processing on ROADS_ALL.*************
+-->Checking layer ROADS_ALL is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer ROADS_ALL is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+ROADS_ALL will be updated as 2013-08-08 < 2013-10-12
+Executing: Copy D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ROADS_ALL D:\Data\Staging\SANGIS_BAK.gdb\SANGIS\ROADS_ALL FeatureClass
+Start Time: Tue Oct 15 21:28:32 2013
+Succeeded at Tue Oct 15 21:29:40 2013 (Elapsed Time: 1 minutes 8 seconds)
+*Number of layers read = 11, total elapsed time = 0:09:45
+ ****************Begining processing on PARCELS_ALL.*************
+-->Checking layer PARCELS_ALL is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer PARCELS_ALL is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+PARCELS_ALL will be updated as 2013-08-08 < 2013-10-12
+Executing: Copy D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.PARCELS_ALL D:\Data\Staging\SANGIS_BAK.gdb\SANGIS\PARCELS_ALL FeatureClass
+Start Time: Tue Oct 15 21:50:16 2013
+Succeeded at Tue Oct 15 21:58:03 2013 (Elapsed Time: 7 minutes 46 seconds)
+*Number of layers read = 12, total elapsed time = 0:38:07
+ ****************Begining processing on PARCEL.*************
+-->Checking layer PARCEL is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer PARCEL is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+PARCEL will be updated as 2013-08-08 < 2013-10-12
+Executing: Copy D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.PARCEL D:\Data\Staging\SANGIS_BAK.gdb\SANGIS\PARCEL FeatureClass
+Start Time: Tue Oct 15 22:12:21 2013
+Succeeded at Tue Oct 15 22:17:37 2013 (Elapsed Time: 5 minutes 16 seconds)
+*Number of layers read = 13, total elapsed time = 0:57:42
+ ****************Begining processing on LOTS.*************
+-->Checking layer LOTS is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer LOTS is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+LOTS will be updated as 2013-08-08 < 2013-10-12
+Executing: Copy D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.LOTS D:\Data\Staging\SANGIS_BAK.gdb\SANGIS\LOTS FeatureClass
+Start Time: Tue Oct 15 22:22:31 2013
+Succeeded at Tue Oct 15 22:23:50 2013 (Elapsed Time: 1 minutes 18 seconds)
+*Number of layers read = 14, total elapsed time = 1:03:55
+ ****************Begining processing on ESMT_OPEN_SPACE.*************
+-->Checking layer ESMT_OPEN_SPACE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer ESMT_OPEN_SPACE is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+ESMT_OPEN_SPACE will be updated as 2013-08-08 < 2013-10-13
+Executing: Copy D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ESMT_OPEN_SPACE D:\Data\Staging\SANGIS_BAK.gdb\SANGIS\ESMT_OPEN_SPACE FeatureClass
+Start Time: Tue Oct 15 22:24:21 2013
+Succeeded at Tue Oct 15 22:24:27 2013 (Elapsed Time: 6.29 seconds)
+*Number of layers read = 15, total elapsed time = 1:04:32
+ ****************Begining processing on ADDRAPN.*************
+-->Checking layer ADDRAPN is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer ADDRAPN is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+ADDRAPN will be updated as 2013-08-08 < 2013-10-13
+Executing: Copy D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ADDRAPN D:\Data\Staging\SANGIS_BAK.gdb\SANGIS\ADDRAPN FeatureClass
+Start Time: Tue Oct 15 22:26:41 2013
+Succeeded at Tue Oct 15 22:27:37 2013 (Elapsed Time: 55.92 seconds)
+*Number of layers read = 16, total elapsed time = 1:07:41
+ ****************Begining processing on ASR_BOOK.*************
+-->Checking layer ASR_BOOK is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer ASR_BOOK is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+ASR_BOOK will be updated as 2013-08-08 < 2013-10-13
+Executing: Copy D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ASR_BOOK D:\Data\Staging\SANGIS_BAK.gdb\SANGIS\ASR_BOOK FeatureClass
+Start Time: Tue Oct 15 22:28:04 2013
+Succeeded at Tue Oct 15 22:28:09 2013 (Elapsed Time: 5.06 seconds)
+*Number of layers read = 17, total elapsed time = 1:08:13
+ ****************Begining processing on CENSUS_BLOCKS.*************
+-->Checking layer CENSUS_BLOCKS is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer CENSUS_BLOCKS is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+CENSUS_BLOCKS will be updated as 2012-07-19 < 2013-10-06
+Executing: Copy D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.CENSUS_BLOCKS D:\Data\Staging\SANGIS_BAK.gdb\SANGIS\CENSUS_BLOCKS FeatureClass
+Start Time: Tue Oct 15 22:29:07 2013
+Succeeded at Tue Oct 15 22:29:18 2013 (Elapsed Time: 10.65 seconds)
+*Number of layers read = 18, total elapsed time = 1:09:22
+ ****************Begining processing on CENSUS_TRACT.*************
+-->Checking layer CENSUS_TRACT is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer CENSUS_TRACT is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+CENSUS_TRACT will be updated as 2012-07-19 < 2013-10-06
+Executing: Copy D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.CENSUS_TRACT D:\Data\Staging\SANGIS_BAK.gdb\SANGIS\CENSUS_TRACT FeatureClass
+Start Time: Tue Oct 15 22:29:43 2013
+Succeeded at Tue Oct 15 22:29:49 2013 (Elapsed Time: 5.25 seconds)
+*Number of layers read = 19, total elapsed time = 1:09:54
+ ****************Begining processing on INDIAN_RESERVATIONS.*************
+-->Checking layer INDIAN_RESERVATIONS is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer INDIAN_RESERVATIONS is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+INDIAN_RESERVATIONS will be updated as 2013-08-08 < 2013-10-13
+Executing: Copy D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.INDIAN_RESERVATIONS D:\Data\Staging\SANGIS_BAK.gdb\SANGIS\INDIAN_RESERVATIONS FeatureClass
+Start Time: Tue Oct 15 22:30:10 2013
+Succeeded at Tue Oct 15 22:30:15 2013 (Elapsed Time: 4.98 seconds)
+*Number of layers read = 20, total elapsed time = 1:10:19
+ ****************Begining processing on JUR_PUBLIC_SAFETY.*************
+-->Checking layer JUR_PUBLIC_SAFETY is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer JUR_PUBLIC_SAFETY is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+JUR_PUBLIC_SAFETY will be updated as 2013-08-08 < 2013-10-13
+Executing: Copy D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.JUR_PUBLIC_SAFETY D:\Data\Staging\SANGIS_BAK.gdb\SANGIS\JUR_PUBLIC_SAFETY FeatureClass
+Start Time: Tue Oct 15 22:30:39 2013
+Succeeded at Tue Oct 15 22:30:44 2013 (Elapsed Time: 5.22 seconds)
+*Number of layers read = 21, total elapsed time = 1:10:49
+ ****************Begining processing on LANDBASE_BOUNDARIES.*************
+-->Checking layer LANDBASE_BOUNDARIES is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer LANDBASE_BOUNDARIES is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+LANDBASE_BOUNDARIES will be updated as 2013-08-08 < 2013-10-12
+Executing: Copy D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.LANDBASE_BOUNDARIES D:\Data\Staging\SANGIS_BAK.gdb\SANGIS\LANDBASE_BOUNDARIES FeatureClass
+Start Time: Tue Oct 15 22:39:36 2013
+Succeeded at Tue Oct 15 22:42:57 2013 (Elapsed Time: 3 minutes 21 seconds)
+*Number of layers read = 22, total elapsed time = 1:23:02
+ ****************Begining processing on LAW_BEATS.*************
+-->Checking layer LAW_BEATS is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer LAW_BEATS is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+LAW_BEATS will be updated as 2013-08-08 < 2013-10-13
+Executing: Copy D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.LAW_BEATS D:\Data\Staging\SANGIS_BAK.gdb\SANGIS\LAW_BEATS FeatureClass
+Start Time: Tue Oct 15 22:43:33 2013
+Succeeded at Tue Oct 15 22:43:39 2013 (Elapsed Time: 6.35 seconds)
+*Number of layers read = 23, total elapsed time = 1:23:44
+ ****************Begining processing on RIGHT_OF_WAY.*************
+-->Checking layer RIGHT_OF_WAY is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer RIGHT_OF_WAY is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+RIGHT_OF_WAY will be updated as 2013-08-08 < 2013-10-12
+Executing: Copy D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.RIGHT_OF_WAY D:\Data\Staging\SANGIS_BAK.gdb\SANGIS\RIGHT_OF_WAY FeatureClass
+Start Time: Tue Oct 15 22:45:50 2013
+Succeeded at Tue Oct 15 22:46:07 2013 (Elapsed Time: 17.61 seconds)
+*Number of layers read = 24, total elapsed time = 1:26:12
+ ****************Begining processing on SUBDIVISION.*************
+-->Checking layer SUBDIVISION is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer SUBDIVISION is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+SUBDIVISION will be updated as 2013-08-08 < 2013-10-12
+Executing: Copy D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.SUBDIVISION D:\Data\Staging\SANGIS_BAK.gdb\SANGIS\SUBDIVISION FeatureClass
+Start Time: Tue Oct 15 22:46:35 2013
+Succeeded at Tue Oct 15 22:46:41 2013 (Elapsed Time: 5.53 seconds)
+*Number of layers read = 25, total elapsed time = 1:26:45
+ ****************Begining processing on SUBDIVISION_LINE.*************
+-->Checking layer SUBDIVISION_LINE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer SUBDIVISION_LINE is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+SUBDIVISION_LINE will be updated as 2013-08-08 < 2013-10-12
+Executing: Copy D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.SUBDIVISION_LINE D:\Data\Staging\SANGIS_BAK.gdb\SANGIS\SUBDIVISION_LINE FeatureClass
+Start Time: Tue Oct 15 22:47:19 2013
+Succeeded at Tue Oct 15 22:47:29 2013 (Elapsed Time: 10.30 seconds)
+*Number of layers read = 26, total elapsed time = 1:27:34
+ ****************Begining processing on ZIPCODE.*************
+-->Checking layer ZIPCODE is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
+-->Checking layer ZIPCODE is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+ZIPCODE will be updated as 2013-08-08 < 2013-10-13
+Executing: Copy D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SDW.CITY.ZIPCODE D:\Data\Staging\SANGIS_BAK.gdb\SANGIS\ZIPCODE FeatureClass
+Start Time: Tue Oct 15 22:47:55 2013
+Succeeded at Tue Oct 15 22:48:00 2013 (Elapsed Time: 4.81 seconds)
+*Number of layers read = 27, total elapsed time = 1:28:05
+ ****************Begining processing on LANDBASE_HISTORICAL.*************
 -->Checking layer LANDBASE_HISTORICAL is new in old table D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE
-LANDBASE_HISTORICAL is a new layer
-Added new record LANDBASE_HISTORICAL to D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LAYERS_UPDATE_TABLE table
- cannot find SDE version,D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LANDBASE_HISTORICAL, of sangis layer: LANDBASE_HISTORICAL 
- schema comparison not run 
-****Warning*** SDE FC D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LANDBASE_HISTORICAL not found in SDE, not backed up
+-->Checking layer LANDBASE_HISTORICAL is new in Src table D:\Data\IN\SANGIS\manifest.gdb\DPI
+Is Updateable
+LANDBASE_HISTORICAL will be updated as it does not have a previous valid update date
+Executing: Copy D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.LANDBASE_HISTORICAL D:\Data\Staging\SANGIS_BAK.gdb\LANDBASE_HISTORICAL FeatureDataset
+Start Time: Tue Oct 15 22:48:53 2013
+Succeeded at Tue Oct 15 22:49:06 2013 (Elapsed Time: 13.52 seconds)

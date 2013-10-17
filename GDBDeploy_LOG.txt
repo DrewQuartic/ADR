@@ -1,15 +1,240 @@
 
 -----------------Beginning Deploy Job---------------
-Started at:01:37PM on October 11, 2013
+Started at:01:43PM on October 16, 2013
+
+*******Sarting load of D:\Data\IN\SANGIS\TBL_ROAD_NAME.gdb\TBL_ROAD_NAME******* 
+looking up update table using: SANGIS_LAYER_NAME = 'TBL_ROAD_NAME' 
+Executing: TableToTable D:\Data\IN\SANGIS\TBL_ROAD_NAME.gdb\TBL_ROAD_NAME
+ D:\sde_connection_files\city@atlasdev.sde TBL_ROAD_NAME # "ROAD_ID "ROAD_ID" true false false 4 Long 0 0 ,First,#,D:\Data\IN\SANGIS\TBL_ROAD_NAME.gdb\TBL_ROAD_NAME
+,ROAD_ID,-1,-1;POST_OPERATOR_ID "POST_OPERATOR_ID" true true false 20 Text 0 0 ,First,#,D:\Data\IN\SANGIS\TBL_ROAD_NAME.gdb\TBL_ROAD_NAME
+,POST_OPERATOR_ID,-1,-1;POST_DATE "POST_DATE" true true false 8 Date 0 0 ,First,#,D:\Data\IN\SANGIS\TBL_ROAD_NAME.gdb\TBL_ROAD_NAME
+,POST_DATE,-1,-1;FULL_NAME "FULL_NAME" true false false 50 Text 0 0 ,First,#,D:\Data\IN\SANGIS\TBL_ROAD_NAME.gdb\TBL_ROAD_NAME
+,FULL_NAME,-1,-1;ROAD20_PREDIR_IND "ROAD20_PREDIR_IND" true true false 1 Text 0 0 ,First,#,D:\Data\IN\SANGIS\TBL_ROAD_NAME.gdb\TBL_ROAD_NAME
+,ROAD20_PREDIR_IND,-1,-1;ROAD20_NM "ROAD20_NM" true true false 20 Text 0 0 ,First,#,D:\Data\IN\SANGIS\TBL_ROAD_NAME.gdb\TBL_ROAD_NAME
+,ROAD20_NM,-1,-1;ROAD20_SUFFIX_NM "ROAD20_SUFFIX_NM" true true false 2 Text 0 0 ,First,#,D:\Data\IN\SANGIS\TBL_ROAD_NAME.gdb\TBL_ROAD_NAME
+,ROAD20_SUFFIX_NM,-1,-1;ROAD30_PREDIR_IND "ROAD30_PREDIR_IND" true true false 2 Text 0 0 ,First,#,D:\Data\IN\SANGIS\TBL_ROAD_NAME.gdb\TBL_ROAD_NAME
+,ROAD30_PREDIR_IND,-1,-1;ROAD30_NM "ROAD30_NM" true true false 30 Text 0 0 ,First,#,D:\Data\IN\SANGIS\TBL_ROAD_NAME.gdb\TBL_ROAD_NAME
+,ROAD30_NM,-1,-1;ROAD30_SUFFIX_NM "ROAD30_SUFFIX_NM" true true false 4 Text 0 0 ,First,#,D:\Data\IN\SANGIS\TBL_ROAD_NAME.gdb\TBL_ROAD_NAME
+,ROAD30_SUFFIX_NM,-1,-1;ROAD30_POSTDIR_IND "ROAD30_POSTDIR_IND" true true false 2 Text 0 0 ,First,#,D:\Data\IN\SANGIS\TBL_ROAD_NAME.gdb\TBL_ROAD_NAME
+,ROAD30_POSTDIR_IND,-1,-1;WORK_ORDER_NUM "WORK_ORDER_NUM" true true false 10 Text 0 0 ,First,#,D:\Data\IN\SANGIS\TBL_ROAD_NAME.gdb\TBL_ROAD_NAME
+,WORK_ORDER_NUM,-1,-1;RESERVE_JUR_CD "RESERVE_JUR_CD" true true false 2 Text 0 0 ,First,#,D:\Data\IN\SANGIS\TBL_ROAD_NAME.gdb\TBL_ROAD_NAME
+,RESERVE_JUR_CD,-1,-1;MULTIPLE_JUR_IND "MULTIPLE_JUR_IND" true true false 1 Text 0 0 ,First,#,D:\Data\IN\SANGIS\TBL_ROAD_NAME.gdb\TBL_ROAD_NAME
+,MULTIPLE_JUR_IND,-1,-1;RESERVE_TOMBRO_NUM "RESERVE_TOMBRO_NUM" true true false 6 Text 0 0 ,First,#,D:\Data\IN\SANGIS\TBL_ROAD_NAME.gdb\TBL_ROAD_NAME
+,RESERVE_TOMBRO_NUM,-1,-1;RESERVE_TENTMAP "RESERVE_TENTMAP" true true false 14 Text 0 0 ,First,#,D:\Data\IN\SANGIS\TBL_ROAD_NAME.gdb\TBL_ROAD_NAME
+,RESERVE_TENTMAP,-1,-1;RESERVE_BY_NM "RESERVE_BY_NM" true true false 20 Text 0 0 ,First,#,D:\Data\IN\SANGIS\TBL_ROAD_NAME.gdb\TBL_ROAD_NAME
+,RESERVE_BY_NM,-1,-1" #
+Start Time: Wed Oct 16 13:45:40 2013
+Succeeded at Wed Oct 16 13:45:49 2013 (Elapsed Time: 8.71 seconds)
+
+*******Sarting load of D:\Data\IN\SANGIS\ROADSEG_ALIAS.gdb\ROADSEG_ALIAS******* 
+looking up update table using: SANGIS_LAYER_NAME = 'ROADSEG_ALIAS' 
+Executing: TableToTable D:\Data\IN\SANGIS\ROADSEG_ALIAS.gdb\ROADSEG_ALIAS
+ D:\sde_connection_files\city@atlasdev.sde ROADSEG_ALIAS # "ROADSEGID "ROADSEGID" true false false 4 Long 0 0 ,First,#,D:\Data\IN\SANGIS\ROADSEG_ALIAS.gdb\ROADSEG_ALIAS
+,ROADSEGID,-1,-1;POSTID "POSTID" true false false 20 Text 0 0 ,First,#,D:\Data\IN\SANGIS\ROADSEG_ALIAS.gdb\ROADSEG_ALIAS
+,POSTID,-1,-1;POSTDATE "POSTDATE" true false false 8 Date 0 0 ,First,#,D:\Data\IN\SANGIS\ROADSEG_ALIAS.gdb\ROADSEG_ALIAS
+,POSTDATE,-1,-1;ALIAS_PREDIR_IND "ALIAS_PREDIR_IND" true true false 2 Text 0 0 ,First,#,D:\Data\IN\SANGIS\ROADSEG_ALIAS.gdb\ROADSEG_ALIAS
+,ALIAS_PREDIR_IND,-1,-1;ALIAS_NM "ALIAS_NM" true true false 30 Text 0 0 ,First,#,D:\Data\IN\SANGIS\ROADSEG_ALIAS.gdb\ROADSEG_ALIAS
+,ALIAS_NM,-1,-1;ALIAS_SUFFIX_NM "ALIAS_SUFFIX_NM" true true false 4 Text 0 0 ,First,#,D:\Data\IN\SANGIS\ROADSEG_ALIAS.gdb\ROADSEG_ALIAS
+,ALIAS_SUFFIX_NM,-1,-1;ALIAS_POST_DIR "ALIAS_POST_DIR" true true false 2 Text 0 0 ,First,#,D:\Data\IN\SANGIS\ROADSEG_ALIAS.gdb\ROADSEG_ALIAS
+,ALIAS_POST_DIR,-1,-1;ALIAS_LEFT_LO_ADDR "ALIAS_LEFT_LO_ADDR" true true false 8 Double 0 0 ,First,#,D:\Data\IN\SANGIS\ROADSEG_ALIAS.gdb\ROADSEG_ALIAS
+,ALIAS_LEFT_LO_ADDR,-1,-1;ALIAS_LEFT_HI_ADDR "ALIAS_LEFT_HI_ADDR" true true false 8 Double 0 0 ,First,#,D:\Data\IN\SANGIS\ROADSEG_ALIAS.gdb\ROADSEG_ALIAS
+,ALIAS_LEFT_HI_ADDR,-1,-1;ALIAS_RIGHT_LO_ADDR "ALIAS_RIGHT_LO_ADDR" true true false 8 Double 0 0 ,First,#,D:\Data\IN\SANGIS\ROADSEG_ALIAS.gdb\ROADSEG_ALIAS
+,ALIAS_RIGHT_LO_ADDR,-1,-1;ALIAS_RIGHT_HI_ADDR "ALIAS_RIGHT_HI_ADDR" true true false 8 Double 0 0 ,First,#,D:\Data\IN\SANGIS\ROADSEG_ALIAS.gdb\ROADSEG_ALIAS
+,ALIAS_RIGHT_HI_ADDR,-1,-1;LMIXADDR "LMIXADDR" true true false 1 Text 0 0 ,First,#,D:\Data\IN\SANGIS\ROADSEG_ALIAS.gdb\ROADSEG_ALIAS
+,LMIXADDR,-1,-1;RMIXADDR "RMIXADDR" true true false 1 Text 0 0 ,First,#,D:\Data\IN\SANGIS\ROADSEG_ALIAS.gdb\ROADSEG_ALIAS
+,RMIXADDR,-1,-1;ALIAS_JURIS "ALIAS_JURIS" true true false 8 Text 0 0 ,First,#,D:\Data\IN\SANGIS\ROADSEG_ALIAS.gdb\ROADSEG_ALIAS
+,ALIAS_JURIS,-1,-1" #
+Start Time: Wed Oct 16 13:46:23 2013
+Succeeded at Wed Oct 16 13:46:26 2013 (Elapsed Time: 2.64 seconds)
+
+*******Sarting load of D:\Data\IN\SANGIS\ROADS_TRANSITION_RAMP.gdb\ROADS_TRANSITION_RAMP******* 
+looking up update table using: SANGIS_LAYER_NAME = 'ROADS_TRANSITION_RAMP' 
+Executing: Copy D:\Data\IN\SANGIS\ROADS_TRANSITION_RAMP.gdb\ROADS_TRANSITION_RAMP
+ D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\ROADS_TRANSITION_RAMP FeatureClass
+Start Time: Wed Oct 16 13:47:15 2013
+Succeeded at Wed Oct 16 13:47:45 2013 (Elapsed Time: 30.34 seconds)
+
+*******Sarting load of D:\Data\IN\SANGIS\ROADS_MAJOR.gdb\ROADS_MAJOR******* 
+looking up update table using: SANGIS_LAYER_NAME = 'ROADS_MAJOR' 
+Executing: Copy D:\Data\IN\SANGIS\ROADS_MAJOR.gdb\ROADS_MAJOR
+ D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\ROADS_MAJOR FeatureClass
+Start Time: Wed Oct 16 13:49:44 2013
+Succeeded at Wed Oct 16 13:50:20 2013 (Elapsed Time: 36.05 seconds)
+
+*******Sarting load of D:\Data\IN\SANGIS\ROADS_INTERSECTION.gdb\ROADS_INTERSECTION******* 
+looking up update table using: SANGIS_LAYER_NAME = 'ROADS_INTERSECTION' 
+Executing: Copy D:\Data\IN\SANGIS\ROADS_INTERSECTION.gdb\ROADS_INTERSECTION
+ D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\ROADS_INTERSECTION FeatureClass
+Start Time: Wed Oct 16 13:50:43 2013
+Succeeded at Wed Oct 16 13:52:18 2013 (Elapsed Time: 1 minutes 34 seconds)
+
+*******Sarting load of D:\Data\IN\SANGIS\ROADS_HIGHWAY.gdb\ROADS_HIGHWAY******* 
+looking up update table using: SANGIS_LAYER_NAME = 'ROADS_HIGHWAY' 
+Executing: Copy D:\Data\IN\SANGIS\ROADS_HIGHWAY.gdb\ROADS_HIGHWAY
+ D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\ROADS_HIGHWAY FeatureClass
+Start Time: Wed Oct 16 13:52:42 2013
+Succeeded at Wed Oct 16 13:53:16 2013 (Elapsed Time: 34.14 seconds)
+
+*******Sarting load of D:\Data\IN\SANGIS\ROADS_FREEWAY_RAMP.gdb\ROADS_FREEWAY_RAMP******* 
+looking up update table using: SANGIS_LAYER_NAME = 'ROADS_FREEWAY_RAMP' 
+Executing: Copy D:\Data\IN\SANGIS\ROADS_FREEWAY_RAMP.gdb\ROADS_FREEWAY_RAMP
+ D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\ROADS_FREEWAY_RAMP FeatureClass
+Start Time: Wed Oct 16 13:53:38 2013
+Succeeded at Wed Oct 16 13:54:09 2013 (Elapsed Time: 31.35 seconds)
+
+*******Sarting load of D:\Data\IN\SANGIS\ROADS_FREEWAY.gdb\ROADS_FREEWAY******* 
+looking up update table using: SANGIS_LAYER_NAME = 'ROADS_FREEWAY' 
+Executing: Copy D:\Data\IN\SANGIS\ROADS_FREEWAY.gdb\ROADS_FREEWAY
+ D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\ROADS_FREEWAY FeatureClass
+Start Time: Wed Oct 16 13:54:31 2013
+Succeeded at Wed Oct 16 13:55:04 2013 (Elapsed Time: 33.03 seconds)
+
+*******Sarting load of D:\Data\IN\SANGIS\ROADS_COLLECTOR.gdb\ROADS_COLLECTOR******* 
+looking up update table using: SANGIS_LAYER_NAME = 'ROADS_COLLECTOR' 
+Executing: Copy D:\Data\IN\SANGIS\ROADS_COLLECTOR.gdb\ROADS_COLLECTOR
+ D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\ROADS_COLLECTOR FeatureClass
+Start Time: Wed Oct 16 13:55:26 2013
+Succeeded at Wed Oct 16 13:56:06 2013 (Elapsed Time: 39.52 seconds)
+
+*******Sarting load of D:\Data\IN\SANGIS\ROADS_ALL.gdb\ROADS_ALL******* 
+looking up update table using: SANGIS_LAYER_NAME = 'ROADS_ALL' 
+Executing: Copy D:\Data\IN\SANGIS\ROADS_ALL.gdb\ROADS_ALL
+ D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\ROADS_ALL FeatureClass
+Start Time: Wed Oct 16 13:56:29 2013
+Succeeded at Wed Oct 16 13:58:50 2013 (Elapsed Time: 2 minutes 21 seconds)
+
+*******Sarting load of D:\Data\IN\SANGIS\PARCELS_ALL.gdb\PARCELS_ALL******* 
+looking up update table using: SANGIS_LAYER_NAME = 'PARCELS_ALL' 
+Executing: Copy D:\Data\IN\SANGIS\PARCELS_ALL.gdb\PARCELS_ALL
+ D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\PARCELS_ALL FeatureClass
+Start Time: Wed Oct 16 13:59:12 2013
+Succeeded at Wed Oct 16 14:12:56 2013 (Elapsed Time: 13 minutes 44 seconds)
+
+*******Sarting load of D:\Data\IN\SANGIS\PARCEL.gdb\PARCEL******* 
+looking up update table using: SANGIS_LAYER_NAME = 'PARCEL' 
+Executing: Copy D:\Data\IN\SANGIS\PARCEL.gdb\PARCEL
+ D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\PARCEL FeatureClass
+Start Time: Wed Oct 16 14:13:22 2013
+Succeeded at Wed Oct 16 14:22:39 2013 (Elapsed Time: 9 minutes 17 seconds)
+
+*******Sarting load of D:\Data\IN\SANGIS\LOTS.gdb\LOTS******* 
+looking up update table using: SANGIS_LAYER_NAME = 'LOTS' 
+Executing: Copy D:\Data\IN\SANGIS\LOTS.gdb\LOTS
+ D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\LOTS FeatureClass
+Start Time: Wed Oct 16 14:23:05 2013
+Succeeded at Wed Oct 16 14:28:16 2013 (Elapsed Time: 5 minutes 10 seconds)
+
+*******Sarting load of D:\Data\IN\SANGIS\ESMT_OPEN_SPACE.gdb\ESMT_OPEN_SPACE******* 
+looking up update table using: SANGIS_LAYER_NAME = 'ESMT_OPEN_SPACE' 
+Executing: Copy D:\Data\IN\SANGIS\ESMT_OPEN_SPACE.gdb\ESMT_OPEN_SPACE
+ D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\ESMT_OPEN_SPACE FeatureClass
+Start Time: Wed Oct 16 14:28:38 2013
+Succeeded at Wed Oct 16 14:29:12 2013 (Elapsed Time: 33.74 seconds)
+
+*******Sarting load of D:\Data\IN\SANGIS\ADDRAPN.gdb\ADDRAPN******* 
+looking up update table using: SANGIS_LAYER_NAME = 'ADDRAPN' 
+failed Copy and past import of D:\Data\IN\SANGIS\ADDRAPN.gdb\ADDRAPN
+ due to spatial domain differences. Attempting an importExecuting: FeatureClassToFeatureClass D:\Data\IN\SANGIS\ADDRAPN.gdb\ADDRAPN
+ D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS ADDRAPN # "PARCELID "PARCELID" true true false 4 Long 0 0 ,First,#,D:\Data\IN\SANGIS\ADDRAPN.gdb\ADDRAPN
+,PARCELID,-1,-1;X_COORD "X_COORD" true true false 8 Double 0 0 ,First,#,D:\Data\IN\SANGIS\ADDRAPN.gdb\ADDRAPN
+,X_COORD,-1,-1;Y_COORD "Y_COORD" true true false 8 Double 0 0 ,First,#,D:\Data\IN\SANGIS\ADDRAPN.gdb\ADDRAPN
+,Y_COORD,-1,-1;APN "APN" true true false 10 Text 0 0 ,First,#,D:\Data\IN\SANGIS\ADDRAPN.gdb\ADDRAPN
+,APN,-1,-1;ADDRNMBR "ADDRNMBR" true true false 8 Double 0 0 ,First,#,D:\Data\IN\SANGIS\ADDRAPN.gdb\ADDRAPN
+,ADDRNMBR,-1,-1;ADDRFRAC "ADDRFRAC" true true false 3 Text 0 0 ,First,#,D:\Data\IN\SANGIS\ADDRAPN.gdb\ADDRAPN
+,ADDRFRAC,-1,-1;ADDRPDIR "ADDRPDIR" true true false 2 Text 0 0 ,First,#,D:\Data\IN\SANGIS\ADDRAPN.gdb\ADDRAPN
+,ADDRPDIR,-1,-1;ADDRNAME "ADDRNAME" true true false 30 Text 0 0 ,First,#,D:\Data\IN\SANGIS\ADDRAPN.gdb\ADDRAPN
+,ADDRNAME,-1,-1;ADDRSFX "ADDRSFX" true true false 4 Text 0 0 ,First,#,D:\Data\IN\SANGIS\ADDRAPN.gdb\ADDRAPN
+,ADDRSFX,-1,-1;ADDRUNIT "ADDRUNIT" true true false 8 Text 0 0 ,First,#,D:\Data\IN\SANGIS\ADDRAPN.gdb\ADDRAPN
+,ADDRUNIT,-1,-1;ADDRJUR "ADDRJUR" true true false 2 Text 0 0 ,First,#,D:\Data\IN\SANGIS\ADDRAPN.gdb\ADDRAPN
+,ADDRJUR,-1,-1;ADDRZIP "ADDRZIP" true true false 5 Text 0 0 ,First,#,D:\Data\IN\SANGIS\ADDRAPN.gdb\ADDRAPN
+,ADDRZIP,-1,-1;ROADSEGID "ROADSEGID" true true false 4 Long 0 0 ,First,#,D:\Data\IN\SANGIS\ADDRAPN.gdb\ADDRAPN
+,ROADSEGID,-1,-1;ASOURCE "ASOURCE" true true false 1 Text 0 0 ,First,#,D:\Data\IN\SANGIS\ADDRAPN.gdb\ADDRAPN
+,ASOURCE,-1,-1" #
+Start Time: Wed Oct 16 14:30:09 2013
+Succeeded at Wed Oct 16 14:40:43 2013 (Elapsed Time: 10 minutes 33 seconds)
+
+*******Sarting load of D:\Data\IN\SANGIS\ASR_BOOK.gdb\ASR_BOOK******* 
+looking up update table using: SANGIS_LAYER_NAME = 'ASR_BOOK' 
+Executing: Copy D:\Data\IN\SANGIS\ASR_BOOK.gdb\ASR_BOOK
+ D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\ASR_BOOK FeatureClass
+Start Time: Wed Oct 16 14:42:28 2013
+Succeeded at Wed Oct 16 14:42:56 2013 (Elapsed Time: 27.65 seconds)
+
+*******Sarting load of D:\Data\IN\SANGIS\CENSUS_BLOCKS.gdb\CENSUS_BLOCKS******* 
+looking up update table using: SANGIS_LAYER_NAME = 'CENSUS_BLOCKS' 
+Executing: Copy D:\Data\IN\SANGIS\CENSUS_BLOCKS.gdb\CENSUS_BLOCKS
+ D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\CENSUS_BLOCKS FeatureClass
+Start Time: Wed Oct 16 14:43:21 2013
+Succeeded at Wed Oct 16 14:44:14 2013 (Elapsed Time: 53.08 seconds)
+
+*******Sarting load of D:\Data\IN\SANGIS\CENSUS_TRACT.gdb\CENSUS_TRACT******* 
+looking up update table using: SANGIS_LAYER_NAME = 'CENSUS_TRACT' 
+Executing: Copy D:\Data\IN\SANGIS\CENSUS_TRACT.gdb\CENSUS_TRACT
+ D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\CENSUS_TRACT FeatureClass
+Start Time: Wed Oct 16 14:44:36 2013
+Succeeded at Wed Oct 16 14:45:06 2013 (Elapsed Time: 29.46 seconds)
+
+*******Sarting load of D:\Data\IN\SANGIS\INDIAN_RESERVATIONS.gdb\INDIAN_RESERVATIONS******* 
+looking up update table using: SANGIS_LAYER_NAME = 'INDIAN_RESERVATIONS' 
+Executing: Copy D:\Data\IN\SANGIS\INDIAN_RESERVATIONS.gdb\INDIAN_RESERVATIONS
+ D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\INDIAN_RESERVATIONS FeatureClass
+Start Time: Wed Oct 16 14:45:29 2013
+Succeeded at Wed Oct 16 14:46:01 2013 (Elapsed Time: 31.52 seconds)
+
+*******Sarting load of D:\Data\IN\SANGIS\JUR_PUBLIC_SAFETY.gdb\JUR_PUBLIC_SAFETY******* 
+looking up update table using: SANGIS_LAYER_NAME = 'JUR_PUBLIC_SAFETY' 
+Executing: Copy D:\Data\IN\SANGIS\JUR_PUBLIC_SAFETY.gdb\JUR_PUBLIC_SAFETY
+ D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\JUR_PUBLIC_SAFETY FeatureClass
+Start Time: Wed Oct 16 14:46:23 2013
+Succeeded at Wed Oct 16 14:46:53 2013 (Elapsed Time: 29.82 seconds)
+
+*******Sarting load of D:\Data\IN\SANGIS\LANDBASE_BOUNDARIES.gdb\LANDBASE_BOUNDARIES******* 
+looking up update table using: SANGIS_LAYER_NAME = 'LANDBASE_BOUNDARIES' 
+Executing: Copy D:\Data\IN\SANGIS\LANDBASE_BOUNDARIES.gdb\LANDBASE_BOUNDARIES
+ D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\LANDBASE_BOUNDARIES FeatureClass
+Start Time: Wed Oct 16 14:47:15 2013
+Succeeded at Wed Oct 16 15:13:00 2013 (Elapsed Time: 25 minutes 44 seconds)
+
+*******Sarting load of D:\Data\IN\SANGIS\LAW_BEATS.gdb\LAW_BEATS******* 
+looking up update table using: SANGIS_LAYER_NAME = 'LAW_BEATS' 
+Executing: Copy D:\Data\IN\SANGIS\LAW_BEATS.gdb\LAW_BEATS
+ D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\LAW_BEATS FeatureClass
+Start Time: Wed Oct 16 15:13:23 2013
+Succeeded at Wed Oct 16 15:13:54 2013 (Elapsed Time: 31.57 seconds)
+
+*******Sarting load of D:\Data\IN\SANGIS\RIGHT_OF_WAY.gdb\RIGHT_OF_WAY******* 
+looking up update table using: SANGIS_LAYER_NAME = 'RIGHT_OF_WAY' 
+Executing: Copy D:\Data\IN\SANGIS\RIGHT_OF_WAY.gdb\RIGHT_OF_WAY
+ D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\RIGHT_OF_WAY FeatureClass
+Start Time: Wed Oct 16 15:14:18 2013
+Succeeded at Wed Oct 16 15:15:45 2013 (Elapsed Time: 1 minutes 26 seconds)
+
+*******Sarting load of D:\Data\IN\SANGIS\SUBDIVISION.gdb\SUBDIVISION******* 
+looking up update table using: SANGIS_LAYER_NAME = 'SUBDIVISION' 
+Executing: Copy D:\Data\IN\SANGIS\SUBDIVISION.gdb\SUBDIVISION
+ D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SUBDIVISION FeatureClass
+Start Time: Wed Oct 16 15:16:06 2013
+Succeeded at Wed Oct 16 15:16:36 2013 (Elapsed Time: 29.10 seconds)
+
+*******Sarting load of D:\Data\IN\SANGIS\SUBDIVISION_LINE.gdb\SUBDIVISION_LINE******* 
+looking up update table using: SANGIS_LAYER_NAME = 'SUBDIVISION_LINE' 
+Executing: Copy D:\Data\IN\SANGIS\SUBDIVISION_LINE.gdb\SUBDIVISION_LINE
+ D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\SUBDIVISION_LINE FeatureClass
+Start Time: Wed Oct 16 15:16:59 2013
+Succeeded at Wed Oct 16 15:17:57 2013 (Elapsed Time: 57.92 seconds)
+
+*******Sarting load of D:\Data\IN\SANGIS\ZIPCODE.gdb\ZIPCODE******* 
+looking up update table using: SANGIS_LAYER_NAME = 'ZIPCODE' 
+Executing: Copy D:\Data\IN\SANGIS\ZIPCODE.gdb\ZIPCODE
+ D:\sde_connection_files\city@atlasdev.sde\SDW.CITY.SANGIS\ZIPCODE FeatureClass
+Start Time: Wed Oct 16 15:18:19 2013
+Succeeded at Wed Oct 16 15:18:47 2013 (Elapsed Time: 27.84 seconds)
 
 *******Sarting load of D:\Data\IN\SANGIS\LANDBASE_HISTORICAL.gdb\LANDBASE_HISTORICAL******* 
 looking up update table using: SANGIS_LAYER_NAME = 'LANDBASE_HISTORICAL' 
 Executing: Copy D:\Data\IN\SANGIS\LANDBASE_HISTORICAL.gdb\LANDBASE_HISTORICAL
  D:\sde_connection_files\city@atlasdev.sde\LANDBASE_HISTORICAL FeatureDataset
-Start Time: Fri Oct 11 13:37:40 2013
-Succeeded at Fri Oct 11 13:38:29 2013 (Elapsed Time: 49.26 seconds)
+Start Time: Wed Oct 16 15:19:03 2013
+Succeeded at Wed Oct 16 15:19:40 2013 (Elapsed Time: 36.50 seconds)
 
------------------Beginning Deploy Job---------------
------------------Beginning Deploy Job---------------
------------------Beginning Deploy Job---------------
 -----------------Beginning Deploy Job---------------
